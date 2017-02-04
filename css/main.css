@@ -171,6 +171,7 @@ hr.small {         /*tiny rules to break up text sections*/
 /*Touring Chantry Island Carousel Section*/
 #tourSec {
   padding: 35px 0px 35px 0px;
+  margin-bottom: 4%;
 }
 
 .carousel-indicators .active {
@@ -260,4 +261,16 @@ hr.small {         /*tiny rules to break up text sections*/
     color: #000;
     background-color: #fff;
     border-color: #fff;
+}
+
+/* Sub-footer Section */
+.sub-footer {
+  background: url(../images/bg_white_boats.jpg) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 25%;
+  padding: 100px 100px;
+}
+
+.sub-footer-con {
+  text-align: center;
 }
