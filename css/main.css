@@ -4,12 +4,18 @@
 body {
   font-family: 'Open Sans', 'Calibri', Arial, sans-serif;
   font-size: 1.25em;
-  color: black;
 }
 
-p {
+.prim-text {
   line-height: 1.5;
   margin: 30px 0;
+  color: #00171f;
+}
+
+.sec-text {
+  line-height: 1.5;
+  margin: 30px 0;
+  color: #f6feff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,7 +40,7 @@ hr.small {         /*tiny rules to break up text sections*/
   max-width: 100px;
   margin: 15px auto;
   border-width: 4px;
-  border-color: #0085A1;
+  border-color: #f6feff;
 }
 
 .navbar {
@@ -157,12 +163,14 @@ hr.small {         /*tiny rules to break up text sections*/
 }
 
 #society {
-  margin-top: 8%;
+  margin-top: 4%;
+  padding: 40px 0px 40px 0px;
+  background: #00bff3;
 }
 
 /*Touring Chantry Island Carousel Section*/
 #tourSec {
-  margin-top: 8%;
+  padding: 35px 0px 35px 0px;
 }
 
 .carousel-indicators .active {
