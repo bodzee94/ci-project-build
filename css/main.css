@@ -1,0 +1,255 @@
+/* Main CSS Stylesheet */
+
+/* General Styles */
+body {
+  font-family: 'Open Sans', 'Calibri', Arial, sans-serif;
+  font-size: 1.25em;
+  color: black;
+}
+
+p {
+  line-height: 1.5;
+  margin: 30px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+a {
+  color: #333333;
+}
+
+a:hover, a:focus {
+  color: #0085A1;
+}
+
+blockquote {      /*Thinking about using block or pull quotes */
+  color: #777777;
+  font-style: italic;
+}
+
+hr.small {         /*tiny rules to break up text sections*/
+  max-width: 100px;
+  margin: 15px auto;
+  border-width: 4px;
+  border-color: #0085A1;
+}
+
+.navbar {
+  width: 100%;
+  text-align: center;
+}
+
+.navbar > li {
+  float: none;
+  background-color: blue;
+}
+
+.navbar-custom { /*customized nav styles. NOT a bootstrap pre-made class*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.navbar-custom .navbar-header .navbar-toggle { /*cutsomizing mobile nav*/
+  color: #777777;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.navbar-custom .nav li a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-custom {
+    background: transparent;
+    border-bottom: 1px solid transparent;
+  }
+
+  .navbar-custom .navbar-brand {
+    color: #0085A1;
+    padding: 20px;
+  }
+
+  .navbar-custom .navbar-brand:hover, .navbar-custom .navbar-brand:focus {
+    color: blue;
+  }
+
+  .navbar-custom .nav li a {
+    color: black;
+    padding: 20px;
+  }
+
+  .navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus {
+    color: rgba(255, 255, 255, 0.8);
+    color: black;
+  }
+}
+
+@media only screen and (min-width: 1170px) {
+  .navbar-custom {
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    transition: background-color 0.3s;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .navbar-custom.is-fixed {
+    /* when the user scrolls down, we hide the header right above the viewport */
+    position: fixed;
+    top: -61px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #f2f2f2;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+  }
+
+  .navbar-custom.is-fixed .navbar-brand {
+    color: #333333;
+  }
+
+  .navbar-custom.is-fixed .navbar-brand:hover, .navbar-custom.is-fixed .navbar-brand:focus {
+    color: #0085A1;
+  }
+
+  .navbar-custom.is-fixed .nav li a {
+    color: #333333;
+  }
+
+  .navbar-custom.is-fixed .nav li a:hover, .navbar-custom.is-fixed .nav li a:focus {
+    color: #0085A1;
+  }
+
+  .navbar-custom.is-visible {
+    /* if the user changes the scrolling direction, we show the header logo */
+    -webkit-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    -o-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+/* Content Section Styles */
+
+/*Marine Heritage Society Section*/
+.content-header {
+  text-align: center;
+}
+
+#society {
+  margin-top: 8%;
+}
+
+/*Touring Chantry Island Carousel Section*/
+#tourSec {
+  margin-top: 8%;
+}
+
+.carousel-indicators .active {
+    background-color: #2980b9;
+}
+
+.carousel-inner img {
+    width: 100%;
+    max-height: 450px
+}
+
+.carousel-control {
+    width: 0;
+}
+
+.carousel-control.left, .carousel-control.right {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	background-image: none;
+	background-repeat: no-repeat;
+	text-shadow: none;
+}
+
+.carousel-control.left span {
+	padding: 15px;
+}
+
+.carousel-control.right span {
+	padding: 15px;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-prev, .carousel-control .icon-next {
+	position: absolute;
+	top: 45%;
+	z-index: 5;
+	display: inline-block;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+	left: 0;
+}
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
+	right: 0;
+}
+
+.carousel-control.left span, .carousel-control.right span {
+	background-color: #000;
+}
+
+.carousel-control.left span:hover, .carousel-control.right span:hover {
+	opacity: .7;
+	filter: alpha(opacity=70);
+}
+
+.carousel-text {
+    position: absolute;
+    top: 20%;
+    left: 1.8%;
+    right: auto;
+    width: 96.66666666666666%;
+    color: #fff;
+}
+
+.carousel-text h3 {
+    font-size: 40px;
+}
+
+.carousel-text h4 {
+	padding: 15px;
+}
+
+.btn-min-block {
+    min-width: 170px;
+    line-height: 26px;
+}
+
+.btn-theme {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin-right: 15px;
+}
+
+.btn-theme:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
