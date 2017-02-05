@@ -38,7 +38,7 @@ blockquote {      /*Thinking about using block or pull quotes */
 
 hr.small {         /*tiny rules to break up text sections*/
   max-width: 100px;
-  margin: 15px auto;
+  margin: 10px auto;
   border-width: 4px;
   border-color: #f6feff;
 }
@@ -263,14 +263,122 @@ hr.small {         /*tiny rules to break up text sections*/
     border-color: #fff;
 }
 
+/* News section */
+#news {
+  margin-top: 4%;
+  padding: 40px 0px 40px 0px;
+  background: #00bff3;
+}
+
+
+@media (min-width: 992px) {
+	#myCarousel {padding-right:33.3333%;}
+	#myCarousel .carousel-controls {display:none;}
+}
+@media (max-width: 991px) {
+	.carousel-caption p,
+	#myCarousel .list-group {display:none;}
+}
+
+/* Events calendar seection */
+#events {
+  margin-top: 4%;
+  padding: 40px 0px 40px 0px;
+  background: #00bff3;
+}
+
+#panelWrapper {
+  border-color: #efd093;
+  -webkit-box-shadow: 0px 10px 18px 0px rgba(239, 208, 147, 0.6);
+  -moz-box-shadow: 0px 10px 18px 0px rgba(239, 208, 147, 0.6);
+  box-shadow: 0px 10px 18px 0px rgba(239, 208, 147, 0.6);
+}
+
+.panel-title {
+  text-align: center;
+}
+
+.panel > .panel-heading {
+  background-image: none;
+  background-color: #efd093;
+  color: #fff;
+}
+
+#eventsCal {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.panel.date {
+    margin: 0px;
+    width: 60px;
+    text-align: center;
+}
+
+.panel.date .month {
+    padding: 2px 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.panel.date .day {
+    padding: 3px 0px;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+
+/* Bookings */
+#bookings {
+  margin-top: 4%;
+  padding: 40px 0px 40px 0px;
+  background: #00bff3;
+}
+
+#schedule {
+  margin-top: 4%;
+}
+
+#bookingsSched {
+  margin-top: 4%;
+  padding: 40px 0px 40px 0px;
+  background: #efd093;
+}
+
+#bookingsInfo {
+  margin-top: 4%;
+}
+
 /* Sub-footer Section */
 .sub-footer {
   background: url(../images/bg_white_boats.jpg) no-repeat center center fixed;
   background-size: cover;
   min-height: 25%;
-  padding: 100px 100px;
+  overflow: hidden;
+  padding: 50px 50px;
 }
 
 .sub-footer-con {
   text-align: center;
+  max-height: 200px;
+  padding: 20px 20px;
+}
+
+.thumbnail {
+  border: none;
+  background: rgba(242, 242, 242, 0.75);
+}
+
+/* Contact Section */
+#contactSec {
+  margin-top: 4%;
+  padding: 40px 0px 40px 0px;
+  background: #efd093;
+}
+
+.centered-form{
+	margin-top: 60px;
+}
+
+.centered-form .panel{
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
 }
