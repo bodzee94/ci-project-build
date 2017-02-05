@@ -43,13 +43,34 @@ hr.small {         /*tiny rules to break up text sections*/
   border-color: #f6feff;
 }
 
+/* Logo, icon and branding styles */
+#MHSlogo {
+  max-width: 150px;
+  z-index: 10;
+}
+
+
+
+#MHSlogoMobile {
+  max-width: 150px;
+  margin-right: 2%;
+}
+
 .navbar {
   width: 100%;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+}
+
+.navbar .navbar-collapse {
   text-align: center;
+  margin-right: 9%;
 }
 
 .navbar > li {
-  float: none;
   background-color: blue;
 }
 
@@ -61,10 +82,12 @@ hr.small {         /*tiny rules to break up text sections*/
   z-index: 5;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-align: center;
+  background: #f6feff;
 }
 
 .navbar-custom .navbar-header .navbar-toggle { /*cutsomizing mobile nav*/
-  color: #777777;
+  color: #00bff3;
+  border: 1px solid #00bff3;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 12px;
@@ -73,23 +96,31 @@ hr.small {         /*tiny rules to break up text sections*/
 .navbar-custom .nav li a {
   text-transform: uppercase;
   font-size: 12px;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 1px;
 }
 
+.dropdown .dropdown-menu {
+  text-align: center;
+}
+
+.dropdown .dropdown-menu li:hover {
+  background: #efd093;
+}
+
+
 @media only screen and (min-width: 768px) {
+  .logo-con {
+    display: none;
+  }
+
   .navbar-custom {
-    background: transparent;
-    border-bottom: 1px solid transparent;
+    background: #f6feff;
   }
 
   .navbar-custom .navbar-brand {
     color: #0085A1;
     padding: 20px;
-  }
-
-  .navbar-custom .navbar-brand:hover, .navbar-custom .navbar-brand:focus {
-    color: blue;
   }
 
   .navbar-custom .nav li a {
@@ -98,8 +129,26 @@ hr.small {         /*tiny rules to break up text sections*/
   }
 
   .navbar-custom .nav li a:hover, .navbar-custom .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8);
-    color: black;
+    color: #00bff3;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .logo-con {
+    margin-top: 20px;
+  }
+
+  #MHSlogo {
+    display: none;
+  }
+
+  .dropdown .dropdown-menu {
+    text-align: left;
+  }
+
+  .logo-con {
+    max-width: 150px;
+    margin-top: -40px;
   }
 }
 
@@ -114,8 +163,6 @@ hr.small {         /*tiny rules to break up text sections*/
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
   }
 
   .navbar-custom.is-fixed {
