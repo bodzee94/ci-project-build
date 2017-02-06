@@ -28,7 +28,7 @@ a {
 }
 
 a:hover, a:focus {
-  color: #0085A1;
+  color: #00bff3;
 }
 
 blockquote {      /*Thinking about using block or pull quotes */
@@ -73,7 +73,7 @@ hr.content-hr {
 }
 
 .navbar > li {
-  background-color: blue;
+  background-color: #00bff3;
 }
 
 .navbar-custom { /*customized nav styles. NOT a bootstrap pre-made class*/
@@ -121,7 +121,6 @@ hr.content-hr {
   }
 
   .navbar-custom .navbar-brand {
-    color: #0085A1;
     padding: 20px;
   }
 
@@ -183,7 +182,7 @@ hr.content-hr {
   }
 
   .navbar-custom.is-fixed .navbar-brand:hover, .navbar-custom.is-fixed .navbar-brand:focus {
-    color: #0085A1;
+    color: #00bff3;
   }
 
   .navbar-custom.is-fixed .nav li a {
@@ -191,7 +190,7 @@ hr.content-hr {
   }
 
   .navbar-custom.is-fixed .nav li a:hover, .navbar-custom.is-fixed .nav li a:focus {
-    color: #0085A1;
+    color: #00bff3;
   }
 
   .navbar-custom.is-visible {
@@ -236,7 +235,7 @@ hr.content-hr {
 }
 
 .carousel-indicators .active {
-    background-color: #2980b9;
+    background-color: #00bff3;
 }
 
 .carousel-inner img {
@@ -295,7 +294,7 @@ hr.content-hr {
     left: 1.8%;
     right: auto;
     width: 96.66666666666666%;
-    color: #fff;
+    color: #f6feff;
 }
 
 .carousel-text h3 {
@@ -312,16 +311,27 @@ hr.content-hr {
 }
 
 .btn-custom {
-    color: #fff;
+    color: #f6feff;
     background-color: transparent;
-    border: 2px solid #fff;
-    margin-right: 15px;
+    border: 2px solid #f6feff;
 }
 
 .btn-custom:hover {
-    color: #000;
-    background-color: #fff;
-    border-color: #fff;
+    color: #00bff3;
+    background-color: #f6feff;
+    border-color: #f6feff;
+}
+
+.btn-custom-alt {
+    color: #efd093;
+    border: 2px solid#efd093;
+    background-color: transparent;
+}
+
+.btn-custom-alt:hover {
+    color: #f6feff;
+    border: 2px solid #efd093;
+    background-color: #efd093;
 }
 
 /* About Chantry Island */
