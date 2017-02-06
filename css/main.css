@@ -47,13 +47,21 @@ hr.content-hr {
   background-color: #efd093;
 }
 
+.well {
+  background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+
+.thumbnail {
+  background: rgba(255, 255, 255, 0.8);
+	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+
 /* Logo, icon and branding styles */
 #MHSlogo {
   max-width: 150px;
   z-index: 10;
 }
-
-
 
 #MHSlogoMobile {
   max-width: 150px;
