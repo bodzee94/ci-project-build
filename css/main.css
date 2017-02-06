@@ -43,6 +43,10 @@ hr.small {         /*tiny rules to break up text sections*/
   border-color: #f6feff;
 }
 
+hr.content-hr {
+  background-color: #efd093;
+}
+
 /* Logo, icon and branding styles */
 #MHSlogo {
   max-width: 150px;
@@ -67,7 +71,7 @@ hr.small {         /*tiny rules to break up text sections*/
 
 .navbar .navbar-collapse {
   text-align: center;
-  margin-right: 9%;
+  margin-right: 4%;
 }
 
 .navbar > li {
@@ -203,16 +207,14 @@ hr.small {         /*tiny rules to break up text sections*/
 }
 
 /* Content Section Styles */
+.top-container {
+  padding: 75px 0px 40px 0px;
+  background: #00bff3;
+}
 
 /*Marine Heritage Society Section*/
 .content-header {
   text-align: center;
-}
-
-#society {
-  margin-top: 4%;
-  padding: 40px 0px 40px 0px;
-  background: #00bff3;
 }
 
 /*Touring Chantry Island Carousel Section*/
@@ -297,19 +299,28 @@ hr.small {         /*tiny rules to break up text sections*/
     line-height: 26px;
 }
 
-.btn-theme {
+.btn-custom {
     color: #fff;
     background-color: transparent;
     border: 2px solid #fff;
     margin-right: 15px;
 }
 
-.btn-theme:hover {
+.btn-custom:hover {
     color: #000;
     background-color: #fff;
     border-color: #fff;
 }
 
+/* About Chantry Island */
+.about-container {
+  padding-top: 15px;
+  background: #efd093;
+}
+
+.about-container h3 {
+  color: #fff;
+}
 /* News section */
 #news {
   margin-top: 4%;
