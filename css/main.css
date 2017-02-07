@@ -357,9 +357,14 @@ hr.content-hr {
   color: #f6feff;
 }
 
+.img-responsive {
+  margin: 0 auto;
+}
+
 /* News section */
 .news-container {
   padding: 40px 0px 40px 0px;
+  background: #efd093;
 }
 
 #newsTabs .tab-content {
