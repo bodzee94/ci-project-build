@@ -4,6 +4,7 @@
 body {
   font-family: 'Open Sans', 'Calibri', Arial, sans-serif;
   font-size: 1.25em;
+  background-color: #f6feff;
 }
 
 .prim-text {
@@ -116,10 +117,7 @@ hr.content-hr {
   }
 
   .navbar-custom .navbar-brand {
-<<<<<<< HEAD
-=======
     color: #00bff3;
->>>>>>> dan-working
     padding: 20px;
   }
 
@@ -133,6 +131,10 @@ hr.content-hr {
   }
 }
 
+#loginIcon {
+  max-width: 20px;
+}
+
 @media only screen and (max-width: 767px) {
   .logo-con {
     margin-top: 20px;
@@ -142,13 +144,22 @@ hr.content-hr {
     display: none;
   }
 
+  #MHSLogoMobile {
+    margin-right: 20px;
+  }
+
   .dropdown .dropdown-menu {
     text-align: left;
   }
 
   .logo-con {
     max-width: 150px;
-    margin-top: -40px;
+    margin-top: -28px;
+    margin-left: 28%;
+  }
+
+  footer {
+    text-align: center;
   }
 }
 
@@ -364,7 +375,6 @@ hr.content-hr {
 /* News section */
 .news-container {
   padding: 40px 0px 40px 0px;
-  background: #efd093;
 }
 
 #newsTabs .tab-content {
@@ -491,6 +501,9 @@ hr.content-hr {
 }
 
 /* Contact Section */
+#mapSec {
+  padding: 40px 0px 40px 0px;
+}
 #contactSec {
   margin-top: 4%;
   padding: 40px 0px 40px 0px;
@@ -504,4 +517,42 @@ hr.content-hr {
 .centered-form .panel{
 	background: rgba(255, 255, 255, 0.8);
 	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+
+/* Footer styles */
+footer {
+	margin-top: 1em;
+	background-color: #00bff3;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0 15px 0 15px;
+}
+
+footer ul li {
+	list-style: none;
+}
+
+footer ul li a {
+	color: #f6feff;
+	opacity: 0.7;
+}
+
+
+footer ul li a:hover {
+	color: #0085A1;
+	opacity: 1;
+	text-decoration: none;
+}
+
+footer h3 {
+	color: #f6feff;
+}
+
+#footer-contact {
+
+}
+
+#social li {
+	display: inline;
 }
