@@ -24,16 +24,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-  color: #333333;
+  color: #00171f;
 }
 
 a:hover, a:focus {
   color: #00bff3;
-}
-
-blockquote {      /*Thinking about using block or pull quotes */
-  color: #777777;
-  font-style: italic;
 }
 
 hr.small {         /*tiny rules to break up text sections*/
@@ -121,6 +116,10 @@ hr.content-hr {
   }
 
   .navbar-custom .navbar-brand {
+<<<<<<< HEAD
+=======
+    color: #00bff3;
+>>>>>>> dan-working
     padding: 20px;
   }
 
@@ -177,10 +176,6 @@ hr.content-hr {
     transition: transform 0.3s;
   }
 
-  .navbar-custom.is-fixed .navbar-brand {
-    color: #333333;
-  }
-
   .navbar-custom.is-fixed .navbar-brand:hover, .navbar-custom.is-fixed .navbar-brand:focus {
     color: #00bff3;
   }
@@ -195,11 +190,17 @@ hr.content-hr {
 
   .navbar-custom.is-visible {
     /* if the user changes the scrolling direction, we show the header logo */
-    -webkit-transform: translate3d(0, 100%, 0);
-    -moz-transform: translate3d(0, 100%, 0);
-    -ms-transform: translate3d(0, 100%, 0);
-    -o-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+  -webkit-transform: translate3d(0, 100%, 0);
+  -moz-transform: translate3d(0, 100%, 0);
+  -ms-transform: translate3d(0, 100%, 0);
+  -o-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  }
+
+  #schedule {
+  background: url('../images/BG_ci_aerial.jpg') no-repeat;
+  background-size: 100%;
+  background-color: none;
   }
 }
 
@@ -211,12 +212,13 @@ hr.content-hr {
 
 .well {
   background: rgba(255, 255, 255, 0.8);
+  border: 2px solid #efd093;
 	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
 }
 
 .thumbnail {
-  background: rgba(255, 255, 255, 0.8);
-	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+  background: rgba(242, 242, 242, 0.6);
+  border: none;
 }
 
 .important {
@@ -231,20 +233,19 @@ hr.content-hr {
 /*Touring Chantry Island Carousel Section*/
 #tourSec {
   padding: 35px 0px 35px 0px;
-  margin-bottom: 4%;
 }
 
 .carousel-indicators .active {
-    background-color: #00bff3;
+  background-color: #00bff3;
 }
 
 .carousel-inner img {
-    width: 100%;
-    max-height: 450px
+  width: 100%;
+  max-height: 600px
 }
 
 .carousel-control {
-    width: 0;
+  width: 0;
 }
 
 .carousel-control.left, .carousel-control.right {
@@ -289,16 +290,16 @@ hr.content-hr {
 }
 
 .carousel-text {
-    position: absolute;
-    top: 20%;
-    left: 1.8%;
-    right: auto;
-    width: 96.66666666666666%;
-    color: #f6feff;
+  position: absolute;
+  top: 20%;
+  left: 1.8%;
+  right: auto;
+  width: 96.66666666666666%;
+  color: #f6feff;
 }
 
 .carousel-text h3 {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .carousel-text h4 {
@@ -306,32 +307,44 @@ hr.content-hr {
 }
 
 .btn-min-block {
-    min-width: 170px;
-    line-height: 26px;
+  min-width: 170px;
+  line-height: 26px;
 }
 
 .btn-custom {
-    color: #f6feff;
-    background-color: transparent;
-    border: 2px solid #f6feff;
+  color: #f6feff;
+  background-color: transparent;
+  border: 2px solid #f6feff;
 }
 
 .btn-custom:hover {
-    color: #00bff3;
-    background-color: #f6feff;
-    border-color: #f6feff;
+  color: #00bff3;
+  background-color: #f6feff;
+  border-color: #f6feff;
 }
 
 .btn-custom-alt {
-    color: #efd093;
-    border: 2px solid#efd093;
-    background-color: transparent;
+  color: #efd093;
+  border: 2px solid#efd093;
+  background-color: transparent;
 }
 
 .btn-custom-alt:hover {
-    color: #f6feff;
-    border: 2px solid #efd093;
-    background-color: #efd093;
+  color: #f6feff;
+  border: 2px solid #efd093;
+  background-color: #efd093;
+}
+
+.btn-custom-alt-bookings {
+  color: #f6feff;
+  border: 2px solid #efd093;
+  background-color: #efd093;
+}
+
+.btn-custom-alt-bookings:hover {
+  color: #efd093;
+  border: 2px solid#efd093;
+  background-color: transparent;
 }
 
 /* About Chantry Island */
@@ -341,15 +354,48 @@ hr.content-hr {
 }
 
 .about-container h3 {
-  color: #fff;
-}
-/* News section */
-#news {
-  margin-top: 4%;
-  padding: 40px 0px 40px 0px;
-  background: #00bff3;
+  color: #f6feff;
 }
 
+/* News section */
+.news-container {
+  padding: 40px 0px 40px 0px;
+}
+
+#newsTabs .tab-content {
+  background-color: #f6feff;
+  padding : 5px 15px;
+  border: 2px solid #efd093;
+  border-radius: 0 0 8px 8px;
+  color: #f6feff;
+  box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+
+#newsTabs .nav-pills {
+  color: #f6feff;
+}
+
+#newsTabs .nav-pills > li > a {
+  border-radius: 4px 4px 0 0 ;
+}
+
+
+#newsTabs .nav-pills > li > a:hover, #newsTabs .nav-pills > li.active > a:focus {
+  background-color: #efd093;
+  color: #f6feff;
+}
+
+.tab-pane > .active {
+  background-color: #efd093;
+  color: #f6feff;
+}
+
+/* Events content section */
+#eventsCal {
+  background:  url('../images/island_water.jpg') no-repeat center center;
+  overflow-y: hidden;
+  padding: 40px 0px 40px 0px;
+}
 
 @media (min-width: 992px) {
 	#myCarousel {padding-right:33.3333%;}
@@ -362,13 +408,13 @@ hr.content-hr {
 
 /* Events calendar seection */
 #events {
-  margin-top: 4%;
   padding: 40px 0px 40px 0px;
   background: #00bff3;
 }
 
 #panelWrapper {
   border-color: #efd093;
+  background: rgba(242, 242, 242, 0.8);
   -webkit-box-shadow: 0px 10px 18px 0px rgba(239, 208, 147, 0.6);
   -moz-box-shadow: 0px 10px 18px 0px rgba(239, 208, 147, 0.6);
   box-shadow: 0px 10px 18px 0px rgba(239, 208, 147, 0.6);
@@ -381,13 +427,9 @@ hr.content-hr {
 .panel > .panel-heading {
   background-image: none;
   background-color: #efd093;
-  color: #fff;
+  color: #f6feff;
 }
 
-#eventsCal {
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
 .panel.date {
     margin: 0px;
     width: 60px;
@@ -414,17 +456,13 @@ hr.content-hr {
 }
 
 #schedule {
-  margin-top: 4%;
-}
-
-#bookingsSched {
-  margin-top: 4%;
   padding: 40px 0px 40px 0px;
-  background: #efd093;
+  background-color: #efd093;
 }
 
 #bookingsInfo {
-  margin-top: 4%;
+  padding-top: 4%;
+  background-color: #efd093;
 }
 
 /* Sub-footer Section */
@@ -444,7 +482,7 @@ hr.content-hr {
 
 .thumbnail {
   border: none;
-  background: rgba(242, 242, 242, 0.75);
+  background: rgba(242, 242, 242, 0.6);
 }
 
 /* Contact Section */
