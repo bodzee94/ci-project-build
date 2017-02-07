@@ -480,25 +480,19 @@ hr.content-hr {
   background-color: #efd093;
 }
 
-/* Sub-footer Section */
-.sub-footer {
-  background: url(../images/bg_white_boats.jpg) no-repeat center center fixed;
-  background-size: cover;
-  min-height: 25%;
-  overflow: hidden;
-  padding: 50px 50px;
+/*Gallery Section*/
+#gallerySec {
+  padding: 40px 0px 40px 0px;
 }
 
-.sub-footer-con {
+#volunteers {
+  padding: 40px 0px 40px 0px;
+}
+.modal .modal-header {
   text-align: center;
-  max-height: 200px;
-  padding: 20px 20px;
 }
 
-.thumbnail {
-  border: none;
-  background: rgba(242, 242, 242, 0.6);
-}
+
 
 /* Contact Section */
 #mapSec {
@@ -517,6 +511,26 @@ hr.content-hr {
 .centered-form .panel{
 	background: rgba(255, 255, 255, 0.8);
 	box-shadow: rgba(0, 0, 0, 0.3) 20px 20px 20px;
+}
+
+/* Sub-footer Section */
+.sub-footer {
+  background: url(../images/bg_white_boats.jpg) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 25%;
+  overflow: hidden;
+  padding: 50px 50px;
+}
+
+.sub-footer-con {
+  text-align: center;
+  max-height: 200px;
+  padding: 20px 20px;
+}
+
+.thumbnail {
+  border: none;
+  background: rgba(242, 242, 242, 0.6);
 }
 
 /* Footer styles */
