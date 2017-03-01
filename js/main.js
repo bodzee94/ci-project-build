@@ -1,227 +1,25 @@
 // Main JavaScript Scripts
-// Gallery JSON
+(function() {
 
-{
-  "galleryOne": [
-  {
-    "title": "blah blah blah 1",
-    "image": "gallery1.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 2",
-    "image": "gallery2.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 1",
-    "image": "gallery3.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 2",
-    "image": "gallery4.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 1",
-    "image": "gallery5.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 2",
-    "image": "gallery6.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 1",
-    "image": "gallery7.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 2",
-    "image": "gallery8.jpg",
-    "photographer": ""
-  },
-]
-}
+  var ajaxRequest = new XMLHttpRequest();
+  var galleryImage = document.querySelector('.gallery-img');
+  var photographer = document.querySelector('.photographer');
+  var galleryTitle = document.querySelector('.modal-title');
 
-{
-  "galleryTwo": [
-  {
-    "title": "blah blah blah 1",
-    "image": "gallery9.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 2",
-    "image": "gallery10.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 1",
-    "image": "gallery11.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 2",
-    "image": "gallery12.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 1",
-    "image": "gallery13.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 2",
-    "image": "gallery14.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 1",
-    "image": "gallery15.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 2",
-    "image": "gallery16.jpg",
-    "photographer": ""
-  }
-  ]
-}
+  ajaxRequest.open('GET', 'json/gallery.json');
 
-{
-  "galleryThree": [
-  {
-    "title": "blah blah blah 1",
-    "image": "gallery17.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 2",
-    "image": "gallery18.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 1",
-    "image": "gallery19.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 2",
-    "image": "gallery20.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 1",
-    "image": "gallery21.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 2",
-    "image": "gallery22.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 1",
-    "image": "gallery23.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 2",
-    "image": "gallery24.jpg",
-    "photographer": ""
-  }
-  ]
-}
+  //ajaxRequest.onload = function() {
+    //console.log(ajaxRequest.responseText)
+  //};
 
-{
-  "galleryFour": [
-  {
-    "title": "blah blah blah 1",
-    "image": "gallery25.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 2",
-    "image": "gallery26.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 1",
-    "image": "gallery27.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 2",
-    "image": "gallery28.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 1",
-    "image": "gallery29.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 2",
-    "image": "gallery30.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 1",
-    "image": "gallery31.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 2",
-    "image": "gallery32.jpg",
-    "photographer": ""
-  }
-  ]
-}
+  ajaxRequest.send();
 
-{
-  "galleryFive": [
-  {
-    "title": "blah blah blah 1",
-    "image": "gallery33.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 2",
-    "image": "gallery34.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 1",
-    "image": "gallery35.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 2",
-    "image": "gallery36.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 1",
-    "image": "gallery37.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 2",
-    "image": "gallery38.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 1",
-    "image": "gallery39.jpg",
-    "photographer": ""
-  },
-  {
-    "title": "blah blah blah 2",
-    "image": "gallery40.jpg",
-    "photographer": ""
-  }
-  ]
-}
+  (function() {
+    $('gallery-btn')
+  })
+  $('modal-title').text(data.title);
+  $('.pokemon-large').attr('src', 'images/' + data.image + '.jpg');
+  $('.photographer').text(data.photographer);
+ }
+
+})();

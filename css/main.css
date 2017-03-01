@@ -403,6 +403,7 @@ hr.content-hr {
 	#myCarousel {padding-right:33.3333%;}
 	#myCarousel .carousel-controls {display:none;}
 }
+
 @media (max-width: 991px) {
 	.carousel-caption p,
 	#myCarousel .list-group {display:none;}
