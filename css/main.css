@@ -5,6 +5,7 @@ body {
   font-family: 'Open Sans', 'Calibri', Arial, sans-serif;
   font-size: 1.25em;
   background-color: #f6feff;
+  overflow-x: hidden;
 }
 
 .prim-text {
@@ -106,6 +107,26 @@ hr.content-hr {
   background: #efd093;
 }
 
+#partners {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#bed {
+	margin-top: -25px;
+	margin-bottom: 10px;
+}
+
+#ourPartners h3 {
+	font-size: 30px;
+}
+
+#before1 {
+	margin-top: 20px;
+}
+
 
 @media only screen and (min-width: 768px) {
   .logo-con {
@@ -198,7 +219,7 @@ hr.content-hr {
   #schedule {
   background: url('../images/BG_ci_aerial.jpg') no-repeat;
   background-size: 100%;
-  background-color: none;
+  background-color: transparent;
   }
 }
 
@@ -487,9 +508,9 @@ hr.content-hr {
   padding: 40px 0px 40px 0px;
 }
 #contactSec {
-  margin-top: 4%;
+  margin-top: 6%;
   padding: 40px 0px 40px 0px;
-  background: #efd093;
+  background: #00bff3;
 }
 
 .centered-form{
