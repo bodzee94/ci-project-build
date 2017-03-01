@@ -5,6 +5,7 @@ body {
   font-family: 'Open Sans', 'Calibri', Arial, sans-serif;
   font-size: 1.25em;
   background-color: #f6feff;
+  overflow-x: hidden;
 }
 
 .prim-text {
@@ -476,11 +477,10 @@ hr.content-hr {
 #volunteers {
   padding: 40px 0px 40px 0px;
 }
+
 .modal .modal-header {
   text-align: center;
 }
-
-
 
 /* Contact Section */
 #mapSec {
@@ -503,7 +503,7 @@ hr.content-hr {
 
 /* Sub-footer Section */
 .sub-footer {
-  background: url(../images/bg_white_boats.jpg) no-repeat center center fixed;
+  background: url(../images/bg_white_boats.jpg) no-repeat center center;
   background-size: cover;
   min-height: 25%;
   overflow: hidden;
