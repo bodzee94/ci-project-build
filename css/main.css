@@ -8,6 +8,16 @@ body {
   overflow-x: hidden;
 }
 
+figcaption {
+	color: white;
+	text-align: center;
+	font-size: 12px;
+}
+
+#bookingsNotes {
+	color: #333;
+}
+
 .prim-text {
   line-height: 1.5;
   margin: 30px 0;
