@@ -83,7 +83,7 @@
       galleryTitle.firstChild.nodevalue = galleryData.gallery_image;
 
       modalTitle.innerHTML = galleryData.gallery_title;
-      galleryImage.src = "../images/" + gallerylData.gallery_full + '.jpg';
+      galleryImage.src = '../images/' + gallerylData.gallery_full + '.jpg';
       photographer.innerHTML = galleryData.gallery_photographer;
   }
 
