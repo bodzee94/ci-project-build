@@ -433,6 +433,7 @@ hr.content-hr {
 	#myCarousel {padding-right:33.3333%;}
 	#myCarousel .carousel-controls {display:none;}
 }
+
 @media (max-width: 991px) {
 	.carousel-caption p,
 	#myCarousel .list-group {display:none;}
@@ -507,11 +508,10 @@ hr.content-hr {
 #volunteers {
   padding: 40px 0px 40px 0px;
 }
+
 .modal .modal-header {
   text-align: center;
 }
-
-
 
 /* Contact Section */
 #mapSec {
@@ -534,7 +534,7 @@ hr.content-hr {
 
 /* Sub-footer Section */
 .sub-footer {
-  background: url(../images/bg_white_boats.jpg) no-repeat center center fixed;
+  background: url(../images/bg_white_boats.jpg) no-repeat center center;
   background-size: cover;
   min-height: 25%;
   overflow: hidden;
