@@ -120,9 +120,8 @@
     			    			<div class="row">
     			    				<div class="col-xs-12 col-sm-12 col-md-12">
     			    					<div class="form-group">
-                          <label>Message:</label>
-    			                  <textarea name="text" id="message" class="form-control input-sm text-center" placeholder="Write Your Message Here" maxlength="140" rows="6" required>
-    			                  </textarea>
+    			                 <textarea name="text" id="message" class="form-control input-sm text-center" placeholder="Write Your Message Here" maxlength="140" rows="6" required>Message
+    			                 </textarea>
     			    					</div>
     			    				</div>
     			    			</div>
