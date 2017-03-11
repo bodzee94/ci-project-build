@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <!--sub footer-->
+  <!--Start of Sub-footer-->
   <section class="row sub-footer">
    <h3 class="hide">Additional Information:</h3>
     <div class="col-xs-6 col-md-3 sub-footer-con thumbnail">
@@ -21,13 +21,13 @@
     </div>
 
     <div class="col-xs-6 col-md-3 sub-footer-con thumbnail">
-      <h4>Bruce County Museum & Cultural Centre</h4>
+      <h4>Bruce County Museum &amp; Cultural Centre</h4>
         <p class="prim-text">The Bruce County Museum and Cultural Centre offers a journey through thousands of years of natural and human history. Check out their awesome Marine Gallery.
         </p>
     </div>
 
     <div class="col-xs-6 col-md-3 sub-footer-con thumbnail">
-      <h4>Explore the Bruce & Lighthouse Tour</h4>
+      <h4>Explore the Bruce &amp; Lighthouse Tour</h4>
         <p class="prim-text">Explore the Bruce is the Official Travel web site of Bruce County, one of the most spectacular all season destinations in Ontario. Check out this link for more Lighthouse Destinations.
         </p>
         <p class="prim-text">Also, enjoy the Bruce Coast Lighthouse tour.
