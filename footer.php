@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <!--sub footer-->
   <section class="row sub-footer">
    <h3 class="hide">Additional Information:</h3>
     <div class="col-xs-6 col-md-3 sub-footer-con thumbnail">
@@ -38,8 +39,9 @@
         <p class="prim-text">The Southampton Tennis Club is a thriving seasonal tennis club on the sunny shores of Lake Huron. Visit our website for more information.
         </p>
     </div>
-  </section>
+  </section><!--end of sub-footer-->
 
+  <!--Start of main footer-->
   <footer>
     <div class="footer" id="footer">
       <div class="container">
@@ -140,14 +142,14 @@
           </div>
         </div>
       </div>
-    </div>
-    <!--End of footer content-->
+    </div>  <!--End of main footer-->
 
+    <!--Start of copyright footer-->
     <div class="footer-bottom">
       <div class="container">
         <p class="pull-left">Copyright © Chantry Island 2017. All right reserved.</p>
-        </div>
       </div>
+    </div><!--end of copyright footer-->
   </footer>
 
 <script src="js/main.js"></script>
