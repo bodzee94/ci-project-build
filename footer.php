@@ -83,23 +83,59 @@
             </ul>
           </div>
 
-          <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
-            <h3>Contact Us</h3>
-            <ul>
-              <li>
-                <div class="input-append contact-box text-center">
-                  <input type="text" class="contact-email text-center" placeholder="Email ">
-                  <button class="btn  bg-gray" type="button">Submit<i class="fa fa-long-arrow-right"> </i> </button>
-                </div>
-              </li>
-            </ul>
-
+          <!--<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
             <ul class="social">
               <li> <a href="#"> <i class=" fa fa-facebook"></i></a></li>
               <li> <a href="#"> <i class="fa fa-twitter"></i></a></li>
               <li> <a href="#"> <i class="fa fa-google-plus"></i></a></li>
               <li> <a href="#"> <i class="fa fa-pinterest"></i></a></li>
               <li> <a href="#"> <i class="fa fa-youtube"></i></a></li>
+            </ul>
+          </div>-->
+
+          <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+            <h3>Contact Us</h3>
+            <ul>
+              <li>
+                <div class="input-append contact-box text-center">
+                  <form>
+    			    			<div class="row">
+    			    				<div class="col-xs-6 col-sm-6 col-md-6">
+    			    					<div class="form-group">
+                          <label>Your Name:</label>
+                            <input type="text" name="first_name" id="first_name" class="form-control input-sm text-center" placeholder="Your Name" required>
+    			    					</div>
+    			    				</div>
+    			    			</div>
+
+    			    			<div class="form-group">
+                      <label>Your Email:</label>
+    			    				  <input type="email" name="email" id="email" class="form-control input-sm text-center" placeholder="Enter Your Email" required>
+    			    			</div>
+
+                    <div class="form-group">
+                    <label>Phone Number:</label>
+    			   <input type="text" name="phone" id="number" class="form-control input-sm text-center" placeholder="Enter Your Phone Number">
+    			    			</div>
+
+                                 <div class="form-group">
+                                 <label>Subject:</label>
+    			    				<input type="text" name="subject" id="subject" class="form-control input-sm text-center" placeholder="Subject" required>
+    			    			</div>
+
+    			    			<div class="row">
+    			    				<div class="col-xs-12 col-sm-12 col-md-12">
+    			    					<div class="form-group">
+                                        <label>Message:</label>
+    			<textarea name="text" id="message" class="form-control input-sm text-center" placeholder="Write Your Message Here" maxlength="140" rows="6" required>
+    			</textarea>
+    			    					</div>
+    			    				</div>
+    			    			</div>
+                    <input type="submit" value="submit" class="btn btn-custom-alt text-center">
+                  </form>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
