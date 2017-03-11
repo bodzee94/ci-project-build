@@ -101,23 +101,19 @@
               <li>
                 <div class="input-append contact-box text-center">
                   <form>
-    			    			<div class="row">
-    			    				<div class="col-xs-6 col-sm-6 col-md-6">
-    			    					<div class="form-group">
-                            <input type="text" name="first_name" id="first_name" class="form-control input-sm text-center" placeholder="Your Name" required>
-    			    					</div>
-    			    				</div>
+    			    			<div class="form-group">
+                      <input type="text" name="first_name" id="first_name" class="form-control input-sm text-center" placeholder="Enter Your Name" required>
     			    			</div>
 
     			    			<div class="form-group">
-    			    				  <input type="email" name="email" id="email" class="form-control input-sm text-center" placeholder="Enter Your Email" required>
+    			    				<input type="email" name="email" id="email" class="form-control input-sm text-center" placeholder="Enter Your Email" required>
     			    			</div>
 
                     <div class="form-group">
-    			   <input type="text" name="phone" id="number" class="form-control input-sm text-center" placeholder="Enter Your Phone Number">
+    			             <input type="text" name="phone" id="number" class="form-control input-sm text-center" placeholder="Enter Your Phone Number">
     			    			</div>
 
-                                 <div class="form-group">
+                    <div class="form-group">
     			    				<input type="text" name="subject" id="subject" class="form-control input-sm text-center" placeholder="Subject" required>
     			    			</div>
 
