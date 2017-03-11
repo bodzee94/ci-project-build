@@ -12,7 +12,7 @@
 
 <body>
   <?php
-    include 'bookings.php';
+    include 'nav.php';
    ?>
 
   <!--Bookings Info Section-->
