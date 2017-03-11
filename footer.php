@@ -104,33 +104,29 @@
     			    			<div class="row">
     			    				<div class="col-xs-6 col-sm-6 col-md-6">
     			    					<div class="form-group">
-                          <label>Your Name:</label>
                             <input type="text" name="first_name" id="first_name" class="form-control input-sm text-center" placeholder="Your Name" required>
     			    					</div>
     			    				</div>
     			    			</div>
 
     			    			<div class="form-group">
-                      <label>Your Email:</label>
     			    				  <input type="email" name="email" id="email" class="form-control input-sm text-center" placeholder="Enter Your Email" required>
     			    			</div>
 
                     <div class="form-group">
-                    <label>Phone Number:</label>
     			   <input type="text" name="phone" id="number" class="form-control input-sm text-center" placeholder="Enter Your Phone Number">
     			    			</div>
 
                                  <div class="form-group">
-                                 <label>Subject:</label>
     			    				<input type="text" name="subject" id="subject" class="form-control input-sm text-center" placeholder="Subject" required>
     			    			</div>
 
     			    			<div class="row">
     			    				<div class="col-xs-12 col-sm-12 col-md-12">
     			    					<div class="form-group">
-                                        <label>Message:</label>
-    			<textarea name="text" id="message" class="form-control input-sm text-center" placeholder="Write Your Message Here" maxlength="140" rows="6" required>
-    			</textarea>
+                          <label>Message:</label>
+    			                  <textarea name="text" id="message" class="form-control input-sm text-center" placeholder="Write Your Message Here" maxlength="140" rows="6" required>
+    			                  </textarea>
     			    					</div>
     			    				</div>
     			    			</div>
