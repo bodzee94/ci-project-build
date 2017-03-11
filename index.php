@@ -22,44 +22,44 @@
           <span class="sr-only">Toggle navigation menu</span>
               Menu<i class="fa fa-bars"></i>
         </button>
-          <a class="navbar-brand" href="index.html"><img src="images/MHS_logo.png" alt="Marine Heritage Society Logo" id="MHSlogo"></a><!--swap out for img tag for logo-->
+          <a class="navbar-brand" href="index.php"><img src="images/MHS_logo.png" alt="Marine Heritage Society Logo" id="MHSlogo"></a><!--swap out for img tag for logo-->
       </div>
 
       <!-- desktop/tablet navigation -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="index.html">Home</a>
+            <a href="index.php">Home</a>
           </li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">About</a>
               <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                 <li>
-                  <a href="about.html">About</a>
+                  <a href="about.php">About</a>
                 </li>
                 <li>
-                  <a href="news.html">News</a>
+                  <a href="news.php">News</a>
                 </li>
                 <li>
-                  <a href="events.html">Events</a>
+                  <a href="events.php">Events</a>
                 </li>
                 <li>
-                  <a href="restoration.html">Restoration</a>
+                  <a href="restoration.php">Restoration</a>
                 </li>
               </ul>
           </li>
           <li>
-            <a href="bookings.html">Book A Tour</a>
+            <a href="bookings.php">Book A Tour</a>
           </li>
             <li>
-            <a href="contact.html">Contact</a>
+            <a href="contact.php">Contact</a>
           </li>
           <li>
-            <a href="gallery.html">Gallery</a>
+            <a href="gallery.php">Gallery</a>
           </li>
-        
+
           <li>
-            <a href="donations.html">Donations</a>
+            <a href="donations.php">Donations</a>
           </li>
           <li>
             <a href="#"><img src="images/login.svg" alt="Admin Login Button" id="loginIcon"></a>
@@ -79,8 +79,8 @@
           <p class="sec-text">The Marine Heritage Society is a not-for-profit group of volunteers dedicated to the preservation and enhancement of our community's marine history. The goal of the Society is to identify, preserve and restore material items of marine historical significance and to raise sufficient funds to support these endeavors. They are also winner of the 2010 "Locals Know" Canada wide competition.
 Among other projects, the Society manages the Chantry Island Light Station under agreements and restrictions from the Canadian Coast Guard and the Canadian Wildlife Service.
           </p>
-          <a href="bookings.html" class="btn btn-custom">Book a Tour</a>
-          <a href="bookings.html" class="btn btn-custom">View Schedule</a>
+          <a href="bookings.php" class="btn btn-custom">Book a Tour</a>
+          <a href="bookings.php" class="btn btn-custom">View Schedule</a>
     </div>
   </section>
 
@@ -155,91 +155,9 @@ Among other projects, the Society manages the Chantry Island Light Station under
 	 </div>
 </section>
 
-  <section class="row sub-footer">
-   <h3 class="hide">Additional Information:</h3>
-    <div class="col-xs-6 col-md-3 sub-footer-con thumbnail">
-      <h4>Saugeen Shores</h4>
-        <p class="prim-text">The Saugeen Shores website is shared between the municipality and the local Chamber of Commerce. Let this website help you plan your visit when you come to tour Chantry Island.
-        </p>
-    </div>
-
-    <div class="col-xs-6 col-md-3 sub-footer-con thumbnail">
-      <h4>Bruce County Museum & Cultural Centre</h4>
-        <p class="prim-text">The Bruce County Museum and Cultural Centre offers a journey through thousands of years of natural and human history. Check out their awesome Marine Gallery.
-        </p>
-    </div>
-
-    <div class="col-xs-6 col-md-3 sub-footer-con thumbnail">
-      <h4>Explore the Bruce & Lighthouse Tour</h4>
-        <p class="prim-text">Explore the Bruce is the Official Travel web site of Bruce County, one of the most spectacular all season destinations in Ontario. Check out this link for more Lighthouse Destinations.
-        </p>
-        <p class="prim-text">Also, enjoy the Bruce Coast Lighthouse tour.
-        </p>
-    </div>
-
-    <div class="col-xs-6 col-md-3 sub-footer-con thumbnail">
-      <h4>Southampton Tennis Club</h4>
-        <p class="prim-text">The Southampton Tennis Club is a thriving seasonal tennis club on the sunny shores of Lake Huron. Visit our website for more information.
-        </p>
-    </div>
-  </section>
-
-  <footer class="row">
-    <div class="col-xs-10 col-xs-offset-1 col-md-2 col-md-offset-0">
-      <ul>
-        <li><a href="#"><h3>CHANTRY ISLAND</h3></a></li>
-    	   <li><p> <a href="tel:5197975862">Call: 519-797-5862</a> <br> <a href="tel:18667975862">Toll Free: 1-866-797-5862</a>
-           <br><br> Marine Heritage Society <br> Box 421 <br> Southhampton, Ontario <br> Canada, N0H 2L0 </p></li>
-      </ul>
-    </div>
-
-    <div class="col-xs-10 col-xs-offset-1 col-md-2 col-md-offset-0">
-      <ul>
-        <li><a href="#"><h3>HOME</h3></a></li>
-    	  <li><a href="#">Home</a></li>
-        <li><a href="#">Admin Sign In</a></li>
-      </ul>
-    </div>
-
-    <div class="col-xs-10 col-xs-offset-1 col-md-2 col-md-offset-0">
-      <ul>
-         <li><a href="#"><h3>ABOUT</h3></a></li>
-    	   <li><a href="#">About</a></li>
-         <li><a href="#">Restorations</a></li>
-         <li><a href="#">News</a></li>
-         <li><a href="#">Events</a></li>
-      </ul>
-    </div>
-
-    <div class="col-xs-10 col-xs-offset-1 col-md-2 col-md-offset-0">
-      <ul>
-        <li><a href="#"><h3>BOOKING &amp; CONTACT</h3></a></li>
-    	   <li><a href="#">Booking Info</a></li>
-         <li><a href="#">Schedule &amp; Rates</a></li>
-         <li><a href="#">Contact</a></li>
-         <li><a href="#">Maps</a></li>
-       </ul>
-    </div>
-
-
-    <div class="col-xs-10 col-xs-offset-1 col-md-2 col-md-offset-0 xs-text-center">
-      <ul>
-        <li><a href="#"><h3>GALLERY &amp; DONATIONS</h3></a></li>
-        <li><a href="#">Chantry Island Gallery</a></li>
-        <li><a href="#">Volunteers</a></li>
-        <li><a href="#">Donate Today</a></li>
-      </ul>
-    </div>
-
-     <div class="col-xs-10 col-xs-offset-1 col-md-2 col-md-offset-0">
-       <ul id="social">
-         <li><a href="#"><h3>SOCIAL MEDIA</h3></a></li>
-         <li><a href="#"><object data="images/facebook.svg" id="facebook" width="36" title="Find Us On Facebook"></object></a></li>
-         <li><a href="#"><object data="images/twitter.svg" id="twitter" width="33" title="Follow Us On Twitter"></object></a></li>
-         <li><a href="#"><object data="images/youtube.svg" id="youtube" width="36" title="Subscribe On YouTube"></object></a></li>
-       </ul>
-     </div>
-  </footer>
+<?php
+  include 'footer.php';
+ ?>
 
 <script src="js/main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
