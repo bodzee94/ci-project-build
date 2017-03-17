@@ -4,7 +4,9 @@
 	$mysqli = new mysqli($config['mysql_server'], $config['mysql_user'], $config['mysql_password'], $config['mysql_db']);
 	$mysqli->set_charset("utf8");
 
-	$query = "SELECT * FROM tbl_gallery WHERE gallery_title = {$title} AND gallery_thumb = {$thumb} AND gallery_full = {$full} AND gallery_photographer = {$credit}";
+	$query = "SELECT * FROM tbl_gallery WHERE gallery_title ='$gall'";
+
+	$gall= $_GET['gall'];
 
 	$result = mysqli_query($mysqli, $query);
 

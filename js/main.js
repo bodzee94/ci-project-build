@@ -1,36 +1,48 @@
 // Main JavaScript Scripts
 (function() {
-  console.log("SEAF fired!");
+  //console.log("SEAF fired!");
 
-  $('.gallery-btn-next').on('click', function() {
-    $.ajax({
-      url: "includes/galleryLoader.php",
-      data: {title: this.id},
-      type: "GET"
-    })
+  var gallThumbs = document.querySelectorAll('.thumb');
+  var gallNext = document.querySelector('.gallery-btn-next');
+  var gallPrev = document.querySelector('.gallery-btn-prev');
+  var gallTitle = document.querySelector('.modal-title');
+  var gallImage = document.querySelector('.gallery-img');
+  var gallPhoto = document.querySelector('.photographer');
+  var httpRequest;
+  var url;
 
-    .done(function(galldata) {
-      console.log(galldata);
+  function ajaxRequest() {
+    httpRequest = new XMLHttpRequest();
 
-      if (galldata !=="null") { //if there's a result and it's not null, do this...
-        data = JSON.parse(galldata);
+    if(!httpRequest) {
+      //console.log('The ajax call did not work correctly');
+      return false;
+    }
 
-        showresults(galldata);
-      }else{ //if there's no data being picked up, do this...
-        console.log('no data was retrieved!');
-      }
-    })
+    var url = 'includes/galleryLoader.php'+'?gall='+this.id;
+    httpRequest.onreadystatechange = showResults;
+    httpRequest.open('GET', url);
+    httpRequest.send();
+  }
 
-    .fail(function(ajaxCall, status, error) {
-      console.log(status, "," error);
-      console.dir(ajaxCall); //check the directory to make sure everything is connected
-    });
+  function showResults() {
+    console.log("Results function fired!");
+
+    if (httpRequest.readyState === XMLHttpRequest.DONE && httpRequest.status === 200) {
+      console.log("ready!");
+
+      var gallData = JSON.parse(httpRequest.responseText);
+
+      gallTitle.firstChild.nodeValue = gallData.gallery_title;
+
+      gallTitle.innerHTML = gallData.gallery_title;
+      //gallImage.src = "images/" + gallData.gallery_full;
+      //gallPhoto.innerHTML = gallData.gallery_photographer;
+    }
+  }
+
+  [].forEach.call(gallThumbs, function(img) {
+    img.addEventListener('click', ajaxRequest, false);
   });
 
-  function showResults(load) {
-    $('.modal-title').text(load.gallery_title);
-    $('.gallery-img').image(load.gallery_full);
-    $('.photographer').text(load.gallery_photographer);
-  }
-  
 })();
