@@ -108,7 +108,8 @@
     			    			<div class="row">
     			    				<div class="col-xs-6 col-sm-6 col-md-6">
     			    					<div class="form-group">
-                            <input type="text" name="first_name" id="first_name" class="form-control input-sm text-center" placeholder="Your Name" required>
+                            <label>To:</label>
+                            <input type="text" name="first_name" id="first_name" class="form-control input-sm text-center" placeholder="chantryisland@bmts.com" required>
     			    					</div>
     			    				</div>
     			    			</div>
@@ -118,7 +119,7 @@
     			    			</div>
 
                     <div class="form-group">
-    			   <input type="text" name="phone" id="number" class="form-control input-sm text-center" placeholder="Enter Your Phone Number">
+    			   <input type="text" name="phone" id="number" class="form-control input-sm text-center" placeholder="Enter Your Phone Number" required>
     			    			</div>
 
                                  <div class="form-group">
