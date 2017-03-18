@@ -1,6 +1,4 @@
 // Main JavaScript Scripts
-<<<<<<< HEAD
-
 (function(){
 	"use strict";
 	console.log("SEAF Fired");
@@ -142,7 +140,7 @@ function nextImage(next)
 {
 	//console.log("next");
     var img = fullImg;
-=======
+
 (function() {
   console.log("SEAF has fired");
 
@@ -186,7 +184,7 @@ function nextImage(next)
 	//console.log("next");
     var img = galleryImage;
 
->>>>>>> 9e14720d0ed26802a18fa1ae1e484dc1b905031d
+
     for(var i = 0; i < imgArray.length;i++)
     {
         if(imgArray[i].src == img.src) // << check this
@@ -198,7 +196,6 @@ function nextImage(next)
            fullImg.src = imgArray[i+1].src;
             break;
         }
-<<<<<<< HEAD
     }
 	
 }
@@ -214,9 +211,8 @@ function nextImage(next)
 
 
 })();
-=======
       }
-    }
+    
 
 
 	for(var i = 0; i < thumb.length; i++){
@@ -254,4 +250,4 @@ function nextImage(next)
   });
 
 })();
->>>>>>> 9e14720d0ed26802a18fa1ae1e484dc1b905031d
+

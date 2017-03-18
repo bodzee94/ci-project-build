@@ -77,7 +77,8 @@
 					
 					marker = new google.maps.Marker({
 						map: map,
-						position: results[0].geometry.location
+						position: results[0].geometry.location,
+						title: "Chantry Island Tour Base"
 					});
 
 				calcRoute(results[0].geometry.location);
@@ -88,6 +89,7 @@
 			}
 		});
 	}
+
 
 	function calcRoute(codedLoc) {
 		var request = {
@@ -108,10 +110,7 @@
         var selectedMode = document.getElementById('mode').value;
         directionsService.route({
           origin: locations[1], // Haight.
-         destination: locations[0] = {lat: 44.499891, lng: -81.373547},  // Ocean Beach.
-          // Note that Javascript allows us to access the constant
-          // using square brackets and a string value as its
-          // "property."
+         destination: locations[0] = {lat: 44.499891, lng: -81.373547},  
           travelMode: google.maps.TravelMode[selectedMode]
         }, function(response, status) {
           if (status == 'OK') {

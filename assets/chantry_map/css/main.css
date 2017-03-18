@@ -45,3 +45,9 @@ button { cursor: pointer; margin-left: 12px; }
         line-height: 30px;
         padding-left: 10px;
       }
+	  
+#travel-options ul li {
+	list-style: none;
+	display: inline;
+}
+	  

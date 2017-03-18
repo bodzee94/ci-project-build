@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Geolocation</title>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCL60hW1FdUjS_vV2_-p0LLL-fJeE_5wro"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgLtAB9zgzoikGtNvZj-qYa6V9z3IN1ao"></script>
 <link href='http://fonts.googleapis.com/css?family=Mystery+Quest' rel='stylesheet' type='text/css'>
 <link href="css/changingThings.css" rel="stylesheet" type="text/css">
 </head>
@@ -22,12 +22,12 @@
              if (navigator.geolocation) {
               navigator.geolocation.getCurrentPosition(showPosition);
              } else {
-              console.log('no soup for you');
+              console.log('Not Found');
              }
          }
 
          function showPosition(position){
-            heading.innerHTML = "Got location!";
+            heading.innerHTML = "Found location";
             lat.innerHTML = "Latitued" + position.coords.latitude;
             lng.innerHTML = "Longitude" + position.coords.longitude;
          }

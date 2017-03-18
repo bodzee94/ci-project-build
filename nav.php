@@ -51,7 +51,7 @@
             <a href="bookings.php">Book A Tour</a>
           </li>
             <li>
-            <a href="contact.php">Contact</a>
+            <a href="contact.php">Location</a>
           </li>
           <li>
             <a href="gallery.php">Gallery</a>
