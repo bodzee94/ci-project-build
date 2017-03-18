@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet">
+<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-<script src="js/modernizr.js"></script>
+<!--<script src="js/modernizr.js"></script>-->
 <title>Chantry Island - Gallery</title>
 </head>
 
@@ -37,8 +37,8 @@
   <div class="panel-heading">
     <h3 class="panel-title">Photos:</h3>
   </div>
-  
-  <div class="panel-body">
+
+  <div class="panel-body" id="thumbnails">
     <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
     <figure>
       <img  class="img-responsive" src="images/gallery1.jpg" alt="img" title="image"/>
@@ -81,7 +81,7 @@
     </div>
   </div>
 
-  <div class="panel-body">
+  <div class="panel-body thumbnails">
     <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
     <figure>
       <img  class="img-responsive" src="images/gallery9.jpg" alt="img" title="image"/>
@@ -124,7 +124,7 @@
     </div>
   </div>
 
-  <div class="panel-body">
+  <div class="panel-body thumbnails">
     <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
     <figure>
       <img  class="img-responsive" src="images/gallery17.jpg" alt="img" title="image"/>
@@ -167,7 +167,7 @@
     </div>
   </div>
 
-  <div class="panel-body">
+  <div class="panel-body thumbnails">
     <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
     <figure>
       <img  class="img-responsive" src="images/gallery25.jpg" alt="img" title="image"/>
@@ -210,7 +210,7 @@
     </div>
   </div>
 
-  <div class="panel-body">
+  <div class="panel-body thumbnails">
     <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
     <figure>
       <img  class="img-responsive" src="images/gallery33.jpg" alt="img" title="image"/>
@@ -266,8 +266,8 @@
         <strong class="prim-text text-center photographer">Photographer Name</strong>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-custom-alt gallery-btn-prev" data-dismiss="modal">Previous</button>
-        <button type="button" class="btn btn-custom-alt gallery-btn-next">Next</button>
+        <button type="button" class="btn btn-custom-alt gallery-btn-prev" id="prev">Previous</button>
+        <button type="button" class="btn btn-custom-alt gallery-btn-next" id="next">Next</button>
       </div>
     </div>
   </div>

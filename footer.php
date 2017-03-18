@@ -102,7 +102,8 @@
                 <div class="input-append contact-box text-center">
                   <form>
     			    			<div class="form-group">
-                      <input type="text" name="first_name" id="first_name" class="form-control input-sm text-center" placeholder="Enter Your Name" required>
+                      <label>To:</label>
+                        <input type="text" name="first_name" id="first_name" class="form-control input-sm text-center" placeholder="chantryisland@bmts.com" required>
     			    			</div>
 
     			    			<div class="form-group">

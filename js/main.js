@@ -3,46 +3,38 @@
   //console.log("SEAF fired!");
 
   var gallThumbs = document.querySelectorAll('.thumb');
-  var gallNext = document.querySelector('.gallery-btn-next');
-  var gallPrev = document.querySelector('.gallery-btn-prev');
+  var gallNext = document.querySelector('#next');
+  var gallPrev = document.querySelector('#prev');
   var gallTitle = document.querySelector('.modal-title');
   var gallImage = document.querySelector('.gallery-img');
   var gallPhoto = document.querySelector('.photographer');
-  var httpRequest;
-  var url;
+  var currentImg = 1; //counter for looping through full images
 
-  function ajaxRequest() {
-    httpRequest = new XMLHttpRequest();
+  $('#thumbnails img, #next, #prev').on('click', function() { //this rotates through the thumbnails
+    if(this.id == "prev") {
+      currentImg--;
+      console.log(currentImg);
 
-    if(!httpRequest) {
-      //console.log('The ajax call did not work correctly');
-      return false;
+      if (currentImg < 1) {
+        currentImg = gallThumbs.length;
+      }
+    }else if(this.id == "next") {
+      currentImg++;
+      console.log(currentImg);
+
+      if(currentImg > gallThumbs.length) {
+        currentImg = 1;
+      }
+    }else{
+      currentImg = this.id;
     }
+  });
 
-    var url = 'includes/galleryLoader.php'+'?gall='+this.id;
-    httpRequest.onreadystatechange = showResults;
-    httpRequest.open('GET', url);
-    httpRequest.send();
-  }
+  $.getJSON('includes/galleryLoader.php',{gallery_id: currentImg}, function(data) { //this function loads everything from DB
 
-  function showResults() {
-    console.log("Results function fired!");
-
-    if (httpRequest.readyState === XMLHttpRequest.DONE && httpRequest.status === 200) {
-      console.log("ready!");
-
-      var gallData = JSON.parse(httpRequest.responseText);
-
-      gallTitle.firstChild.nodeValue = gallData.gallery_title;
-
-      gallTitle.innerHTML = gallData.gallery_title;
-      //gallImage.src = "images/" + gallData.gallery_full;
-      //gallPhoto.innerHTML = gallData.gallery_photographer;
-    }
-  }
-
-  [].forEach.call(gallThumbs, function(img) {
-    img.addEventListener('click', ajaxRequest, false);
+    $('#modal1 img').attr('src', 'images/' + data.gallery_full);
+    $('#imgDesc').text(data.gallery_photographer);
+    $('#myModalLabel').text(data.gallery_title);
   });
 
 })();
