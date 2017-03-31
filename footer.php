@@ -105,9 +105,19 @@
               <li>
                 <div class="input-append contact-box text-center">
                   <form>
+<<<<<<< HEAD
     			    			<div class="form-group">
                       <label>To:</label>
                         <input type="text" name="first_name" id="first_name" class="form-control input-sm text-center" placeholder="chantryisland@bmts.com" required>
+=======
+    			    			<div class="row">
+    			    				<div class="col-xs-6 col-sm-6 col-md-6">
+    			    					<div class="form-group">
+                            <label>To:</label>
+                            <input type="text" name="first_name" id="first_name" class="form-control input-sm text-center" placeholder="chantryisland@bmts.com" required>
+    			    					</div>
+    			    				</div>
+>>>>>>> f6c4601f95d48e6be76c9177c3e2aa4ccd8c6c32
     			    			</div>
 
     			    			<div class="form-group">
@@ -115,7 +125,11 @@
     			    			</div>
 
                     <div class="form-group">
+<<<<<<< HEAD
     			             <input type="text" name="phone" id="number" class="form-control input-sm text-center" placeholder="Enter Your Phone Number">
+=======
+    			   <input type="text" name="phone" id="number" class="form-control input-sm text-center" placeholder="Enter Your Phone Number" required>
+>>>>>>> f6c4601f95d48e6be76c9177c3e2aa4ccd8c6c32
     			    			</div>
 
                     <div class="form-group">

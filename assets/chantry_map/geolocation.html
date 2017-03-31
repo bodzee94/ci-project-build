@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Geolocation</title>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgLtAB9zgzoikGtNvZj-qYa6V9z3IN1ao"></script>
+<link href='http://fonts.googleapis.com/css?family=Mystery+Quest' rel='stylesheet' type='text/css'>
+<link href="css/changingThings.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h4>Getting location...</h4>
+<span class="latitude"></span>
+<span class="longitude"></span>
+<script>
+  (function(){
+    var lat = document.querySelector('.latitude'),
+         lng = document.querySelector('.longitude'),
+         heading = document.querySelector('h4');
+
+         //use the browsers's geolocation object to get our position
+         function getLocation(){
+             if (navigator.geolocation) {
+              navigator.geolocation.getCurrentPosition(showPosition);
+             } else {
+              console.log('Not Found');
+             }
+         }
+
+         function showPosition(position){
+            heading.innerHTML = "Found location";
+            lat.innerHTML = "Latitued" + position.coords.latitude;
+            lng.innerHTML = "Longitude" + position.coords.longitude;
+         }
+
+         getLocation();
+  })();
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

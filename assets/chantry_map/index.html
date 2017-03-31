@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Map Example</title>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgLtAB9zgzoikGtNvZj-qYa6V9z3IN1ao" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/directions/json?origin=Toronto&destination=Southampton&key=AIzaSyCgLtAB9zgzoikGtNvZj-qYa6V9z3IN1ao" type="text/javascript"></script>
+	
+    
+</head>
+<body>
+
+	<div class="preload-wrapper">
+		<i class="fa fa-spinner fa-spin"></i>
+		<span>Loading map, please wait...</span>
+	</div>
+    
+    <div id="floating-panel">
+    <b>Mode of Travel: </b>
+    <select id="mode">
+      <option value="DRIVING">Driving</option>
+      <option value="WALKING">Walking</option>
+      <option value="BICYCLING">Bicycling</option>
+      <option value="TRANSIT">Transit</option>
+    </select>
+    </div>
+
+	<div class="map-wrapper"></div>
+
+	<h4 class="geocode-header">Get directions to the Chantry Island Tour Base by entering your address below:</h4>
+
+	<input type="text" class="address">
+	<button class="geocode">Code Address</button>
+	
+    
+	<script src="js/main.js"></script>
+</body>
+</html>
