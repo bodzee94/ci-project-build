@@ -4,9 +4,10 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet">
+<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<!--<script src="js/modernizr.js"></script>-->
 <title>Chantry Island - Gallery</title>
 </head>
 
@@ -36,7 +37,8 @@
   <div class="panel-heading">
     <h3 class="panel-title">Photos:</h3>
   </div>
-  <div class="panel-body">
+
+  <div class="panel-body" id="thumbnails">
     <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
     <figure>
       <img  class="img-responsive" src="images/gallery1.jpg" alt="img" title="image"/>
@@ -77,6 +79,179 @@
         <img  class="img-responsive" src="images/gallery8.jpg" alt="img" title="image"/>
     </figure>
     </div>
+  </div>
+
+  <div class="panel-body thumbnails">
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+      <img  class="img-responsive" src="images/gallery9.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+      <img  class="img-responsive" src="images/gallery10.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+        <img  class="img-responsive" src="images/gallery11.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+        <img  class="img-responsive" src="images/gallery12.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+      <img  class="img-responsive" src="images/gallery13.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+      <img  class="img-responsive" src="images/gallery14.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+        <img  class="img-responsive" src="images/gallery15.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+        <img  class="img-responsive" src="images/gallery16.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+  </div>
+
+  <div class="panel-body thumbnails">
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+      <img  class="img-responsive" src="images/gallery17.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+      <img  class="img-responsive" src="images/gallery18.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+        <img  class="img-responsive" src="images/gallery19.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+        <img  class="img-responsive" src="images/gallery20.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+      <img  class="img-responsive" src="images/gallery21.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+      <img  class="img-responsive" src="images/gallery22.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+        <img  class="img-responsive" src="images/gallery23.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+        <img  class="img-responsive" src="images/gallery24.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+  </div>
+
+  <div class="panel-body thumbnails">
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+      <img  class="img-responsive" src="images/gallery25.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+      <img  class="img-responsive" src="images/gallery26.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+        <img  class="img-responsive" src="images/gallery27.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+        <img  class="img-responsive" src="images/gallery28.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+      <img  class="img-responsive" src="images/gallery29.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+      <img  class="img-responsive" src="images/gallery30.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+        <img  class="img-responsive" src="images/gallery31.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+        <img  class="img-responsive" src="images/gallery32.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+  </div>
+
+  <div class="panel-body thumbnails">
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+      <img  class="img-responsive" src="images/gallery33.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+      <img  class="img-responsive" src="images/gallery34.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+        <img  class="img-responsive" src="images/gallery35.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+        <img  class="img-responsive" src="images/gallery36.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+      <img  class="img-responsive" src="images/gallery27.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+      <img  class="img-responsive" src="images/gallery38.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+        <img  class="img-responsive" src="images/gallery39.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+    <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
+    <figure>
+        <img  class="img-responsive" src="images/gallery40.jpg" alt="img" title="image"/>
+    </figure>
+    </div>
+  </div>
 
 <!-- Modal -->
 <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
@@ -91,8 +266,8 @@
         <strong class="prim-text text-center photographer">Photographer Name</strong>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-custom-alt gallery-btn-prev" data-dismiss="modal">Previous</button>
-        <button type="button" class="btn btn-custom-alt gallery-btn-next">Next</button>
+        <button type="button" class="btn btn-custom-alt gallery-btn-prev" id="prev">Previous</button>
+        <button type="button" class="btn btn-custom-alt gallery-btn-next" id="next">Next</button>
       </div>
     </div>
   </div>
@@ -190,7 +365,7 @@
    ?>
 
 <script src="js/main.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap/jquery.min.js"></script>
 <script src="js/bootstrap/bootstrap.min.js"></script>
 </body>
 </html>
