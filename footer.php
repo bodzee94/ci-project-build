@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
-<link href="css/main.css" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-</head>
 
-<body>
-<<<<<<< HEAD
-  <!--Start of Sub-footer-->
-=======
-  <!--Start of sub-footer-->
->>>>>>> dan-working
   <section class="row sub-footer">
    <h3 class="hide">Additional Information:</h3>
     <div class="col-xs-6 col-md-3 sub-footer-con thumbnail">
@@ -105,11 +88,9 @@
               <li>
                 <div class="input-append contact-box text-center">
                   <form>
-<<<<<<< HEAD
     			    			<div class="form-group">
                       <label>To:</label>
                         <input type="text" name="first_name" id="first_name" class="form-control input-sm text-center" placeholder="chantryisland@bmts.com" required>
-=======
     			    			<div class="row">
     			    				<div class="col-xs-6 col-sm-6 col-md-6">
     			    					<div class="form-group">
@@ -117,7 +98,6 @@
                             <input type="text" name="first_name" id="first_name" class="form-control input-sm text-center" placeholder="chantryisland@bmts.com" required>
     			    					</div>
     			    				</div>
->>>>>>> f6c4601f95d48e6be76c9177c3e2aa4ccd8c6c32
     			    			</div>
 
     			    			<div class="form-group">
@@ -125,11 +105,8 @@
     			    			</div>
 
                     <div class="form-group">
-<<<<<<< HEAD
     			             <input type="text" name="phone" id="number" class="form-control input-sm text-center" placeholder="Enter Your Phone Number">
-=======
     			   <input type="text" name="phone" id="number" class="form-control input-sm text-center" placeholder="Enter Your Phone Number" required>
->>>>>>> f6c4601f95d48e6be76c9177c3e2aa4ccd8c6c32
     			    			</div>
 
                     <div class="form-group">
