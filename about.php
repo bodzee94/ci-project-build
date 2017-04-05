@@ -1,3 +1,14 @@
+<?php
+
+	ini_set('display_errors',1);
+    error_reporting(E_ALL);
+
+	require_once('admin/phpscripts/init.php');
+
+		$tbl = "tbl_about";
+		$getAbout = getAll($tbl);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,16 +23,16 @@
 
 <body>
   <?php
-    include 'nav.php';
+    include ('nav.php');
    ?>
-   
+
   <!--Events Top Section-->
   <section class="row top-container">
     <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3 container">
     <div class="container center logo-con"><img src="images/MHS_logo.png" id="MHSlogoMobile" alt="Marine Heritage Foundation Logo"></div>
       <h2 class="content-header sec-text">About Chantry Island</h2>
         <hr class="small sec-text" id="society-hr">
-          <p class="sec-text">
+        <p class="sec-text">
             Chantry Island is located on Lake Huron, just over a mile southwest of the Saugeen River mouth in Southampton, Ontario. On the island is a majestic Imperial Lighthouse built in the mid 1800’s, as well as the Keeper’s quarters and a boat house. In 1822, during a hydrographic survey, Captain Henry Bayfield of the Royal Navy christened the island and named it after his friend and British sculptor Sir Francis Chantry.
           </p>
           <a href="bookings.php" class="btn btn-custom">Book a Tour</a>
@@ -29,74 +40,85 @@
     </div>
   </section>
 
-  <section class="row about-container">
-      <h3 class="content-header">Chantry Island</h3>
-    <div class="col-xs-10 col-md-7 col-xs-offset-1 col-md-offset-1">
-    <figure>
-      <img src="images/island_water.png" class="img-responsive" alt="Aeriel View of Island">
-      <figcaption>photo by: James Swartz</figcaption>
-      </figure>
-      <p class="sec-text">
-        The island varies in size depending on the level of Lake Huron. Today, with a low lake level Chantry Island is about 68 acres. In 1986 when the water level was at the highest of the century, the island was only about 10 acres, causing trees on the west, north and south sides to drown.
-      </p>
-    </div>
-    <div class="col-xs-10 col-xs-offset-1 col-md-3 col-md-offset-0">
-      <p class="sec-text">
-        Chantry Island is a glacial moraine and consists of stone above the water and beneath extending a mile north and a mile south of the island. These underwater shoals of massive granite boulders have made this area one of the most treacherous in the Great Lakes. There are over 50 known shipwrecks around the island and there are many accounts from the 1800’s and early – mid 1900’s of these disasters and lost lives. Today, buoys and modern navigational tools safely guide boats through the area.
-      </p>
-      <figure>
-      <img src="images/island_water_2.png" class="img-responsive" alt="the island two">
-       <figcaption>photo by: Karen Smith</figcaption>
-       </figure>
-    </div>
-  </section>
 
 
-  <section class="row about-container">
-      <h3 class="content-header">The Lighthouse History</h3>
-    <div class="col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-1">
-      <p class="sec-text">
-        During the mid 1800’s water traffic on the Great Lakes had substantially increased and the colonial government called for improved navigational tools for the mariners on the Lake Huron. John Brown of Thorold was contracted to build the lighthouse on Chantry Island, as well as 10 other lighthouses to help sailors navigate the Lake. Because of the expense and difficulty of building, only six were completed. The Chantry Island Lighthouse was one of these completed and it was lit on April 1, 1859.
-      </p>
-    </div>
-    <div class="col-xs-10 col-xs-offset-1 col-md-2 col-md-offset-0">
-      <img src="images/lighthouse.jpg" class="img-responsive" alt="Chantry Island Lighthouse">
-       <figcaption>photo by: Vicki Tomori</figcaption>
-    </div>
-    <div class="col-xs-10 col-xs-offset-1 col-md-4 col-xs-offset-0">
-      <p class="sec-text">
-        The lighthouse stands 86 ft. above water level and is 80 ft. high from its base to the light’s center. The lantern room of the lighthouse was fitted with a Fresnel lens built and transported from Paris, France. The first fuel used was sperm whale oil and the first light was a fixed light, not the familiar flashing one. Other fuels used have been colza oil, coal oil, kerosene, acetylene and electricity. Its present-day flashing light is solar powered!
-      </p>
-    </div>
-  </section>
+    <?php
+       if(!is_string($getAbout)){
+           while($row = mysqli_fetch_array($getAbout)){
+            echo  "<section class=\"row about-container\">";
+    echo "<h3 class=\"content-header infotitle1\">{$row['about_section_1_title']}</h3>";
+    echo "<div class=\"col-xs-10 col-md-7 col-xs-offset-1 col-md-offset-1\">";
+    echo "<figure>";
+      echo "<img src=\"images/island_water.png\" class=\"img-responsive\" alt=\"Aeriel View of Island\">";
+      echo "<figcaption>photo by: James Swartz</figcaption>";
+      echo "</figure>";
 
-  <section class="row about-container">
-      <h3 class="content-header">Federal Bird Sanctuary</h3>
-    <div class="col-xs-12 col-md-6 col-md-offset-1">
-      <p class="sec-text">
-        During the mid 1800’s water traffic on the Great Lakes had substantially increased and the colonial government called for improved navigational tools for the mariners on the Lake Huron. John Brown of Thorold was contracted to build the lighthouse on Chantry Island, as well as 10 other lighthouses to help sailors navigate the Lake. Because of the expense and difficulty of building, only six were completed. The Chantry Island Lighthouse was one of these completed and it was lit on April 1, 1859.
-      </p>
-    </div>
-    <div class="col-xs-12 col-md-4">
-      <img src="images/birds.jpg" class="img-responsive" alt="bird sanctuary photo">
-       <figcaption>photo by: Nancy Calder</figcaption>
-    </div>
-  </section>
+               echo "<p class=\"sec-text about2\">{$row['about_s1_p2']}</p>";
 
-  <section class="row about-container">
-    <h3 class="content-header">Beautiful Sunsets</h3>
-    <div class="col-xs-12 col-md-10 col-md-offset-1 center">
-      <img src="images/sunset.png" class="img-responsive" alt="sunset photo">
 
-    </div>
-  </section>
+    echo "</div>";
+    echo "<div class=\"col-xs-10 col-xs-offset-1 col-md-3 col-md-offset-0\">";
+     echo "<p class=\"sec-text about1\">{$row['about_s1_p1']}</p>";
+      echo "<figure>";
+      echo "<img src=\"images/island_water_2.png\" class=\"img-responsive\" alt=\"the island two\">";
+       echo "<figcaption>photo by: Karen Smith</figcaption>";
+       echo "</figure>";
+  echo   "</div>";
+
+
+echo "</section>";
+
+echo "<section class=\"row about-container\">";
+  echo "<h3 class=\"content-header infotitle2\">{$row['about_section_2_title']}</h3>";
+  echo "<div class=\"col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-1\">";
+  echo "<p class=\"sec-text about3\">{$row['about_s2_p1']}</p>";
+  echo "</div>";
+  echo "<div class=\"col-xs-10 col-xs-offset-1 col-md-2 col-md-offset-0\">";
+    echo "<img src=\"images/lighthouse.jpg\" class=\"img-responsive\" alt=\"Chantry Island Lighthouse\">";
+    echo  "<figcaption>photo by: Vicki Tomori</figcaption>";
+echo "</div>";
+  echo "<div class=\"col-xs-10 col-xs-offset-1 col-md-4 col-xs-offset-0\">";
+    echo "<p class=\"sec-text about4\">{$row['about_s2_p2']}</p>";
+    echo "</div>";
+    echo "</section>";
+
+echo "<section class=\"row about-container\">";
+echo "<h3 class=\"content-header infotitle3\">{$row['about_section_3_title']}</h3>";
+  echo "<div class=\"col-xs-12 col-md-6 col-md-offset-1\">";
+    echo "<p class=\"sec-text about5\">{$row['about_birdText']}</p>";
+  echo "</div>";
+
+  echo "<div class=\"col-xs-12 col-md-4\">";
+    echo "<img src=\"images/birds.jpg\" class=\"img-responsive\" alt=\"bird sanctuary photo\">";
+     echo "<figcaption>photo by: Nancy Calder</figcaption>";
+  echo "</div>";
+  echo "</section>";
+
+echo "<section class=\"row about-container\">";
+  echo "<h3 class=\"content-header\">Beautiful Sunsets</h3>";
+  echo "<div class=\"col-xs-12 col-md-10 col-md-offset-1 center\">";
+    echo "<img src=\"images/sunset.png\" class=\"img-responsive\" alt=\"sunset photo\">";
+
+  echo "</div>";
+  echo "</section>";
+
+
+
+  }
+}else{
+  echo "<p>{$getAbout}</p>";
+}
+?>
+
 
   <?php
     include 'footer.php';
    ?>
 
-<script src="js/main.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/aboutreq.js"></script>
 </body>
 </html>

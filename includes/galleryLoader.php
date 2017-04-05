@@ -1,5 +1,5 @@
 <?php
-	include 'connect.php';
+	include ('connect.php');
 
 	$mysqli = new mysqli($config['mysql_server'], $config['mysql_user'], $config['mysql_password'], $config['mysql_db']);
 	$mysqli->set_charset("utf8");

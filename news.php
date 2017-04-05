@@ -1,3 +1,15 @@
+<?php
+
+	ini_set('display_errors',1);
+    error_reporting(E_ALL);
+
+	require_once('admin/phpscripts/init.php');
+
+		$tbl = "tbl_news";
+		$getNews = getAll($tbl);
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +46,7 @@ Check back soon for more news about the island and updates on all of our project
       <h3 class="prim-text text-center content-header">What's New?</h3>
       <ul  class="nav nav-pills">
 		    <li class="active">
-          <a  href="#tab1" data-toggle="tab">January 2017</a>
+          <a  href="#tab1" data-toggle="tab">2017</a>
 			  </li>
         <li><a href="#tab2" data-toggle="tab">December 2016</a>
 			  </li>
@@ -47,8 +59,25 @@ Check back soon for more news about the island and updates on all of our project
 		  </ul>
 
 			<div class="tab-content clearfix">
-			  <div class="tab-pane active" id="tab1">
-          <h4 class="prim-text">Doug Johnson Proudly Displays the Famous Saying.</h4>
+
+
+          <?php
+              if(!is_string($getNews)){
+                  while($row = mysqli_fetch_array($getNews)){
+                    echo "<div class=\"tab-pane active\" id=\"tab1\">";
+                    echo "<h4 class=\"prim-text text-center\">{$row['news_headline']}</h4>";
+                    echo "<img src=\"images/{$row['news_image']}\" class=\"img-responsive\" alt=\"{$row['news_headline']}\">";
+                    echo "<p class=\"prim-text text-center\">{$row['news_description']}</p>";
+                    echo "<strong><p class=\"prim-text text-center\">Date Posted: {$row['news_date']}</p></strong>";
+                    echo "</div>";
+                  }
+                }else{
+                  echo "<p>{$getNews}</p>";
+                }
+          ?>
+
+
+        <!--  <h4 class="prim-text">Doug Johnson Proudly Displays the Famous Saying.</h4>
             <img src="images/doug_johnson.jpg" alt="Doug Johnson's Birthday" class="img-responsive">
             <p></p>
             <strong class="prim-text">Date Posted: 2017-01-10</strong>
@@ -66,7 +95,7 @@ Check back soon for more news about the island and updates on all of our project
                Inside the Chantry Island Tour Base, where tickets can be purchased for the tours to Chantry Island. The Tour Base will open again in June
             </p>
             <strong class="prim-text">Date Posted: 2017-01-08</strong>
-				</div>
+				</div> --->
 
 				<div class="tab-pane" id="tab2">
           <h4 class="prim-text">Southampton Christmas Parade 1</h4>
@@ -76,7 +105,7 @@ Check back soon for more news about the island and updates on all of our project
               </p>
                 <strong class="prim-text">Date Posted: 2016-12-02</strong>
           <h4 class="prim-text">Southampton Christmas Parade 2</h4>
-            <img src="float.jpg" alt="Southampton Parade 2" class="img-responsive">
+            <img src="images/float.jpg" alt="Southampton Parade 2" class="img-responsive">
               <p class="prim-text">
               The Marine Heritage Society and Propeller Club Float or I mean boat was well received Friday Night at the annual Christmas Parade. Towing the Boat was a Saugeen Shores Fire pick up truck driven by Phil Eagleson our Fire Chief.
               </p>

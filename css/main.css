@@ -1,10 +1,165 @@
 /* Main CSS Stylesheet */
 
+/*------admin styles--------*/
+
+.fileSelector {
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	background-color: white;
+}
+
+#adminCreate, #admin_edituser, #admin_editabout, #admin_editrest, #admin_editnews, #admin_editevents, #admin_editsched, #admin_editgall {
+	background-image: url(../images/waterBG.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	overflow-x: hidden;
+	text-align: center;
+}
+
+#createForm label {
+	font-size: 1.3em;
+}
+
+#createsub, .submit {
+	border: solid 2px #4d90fe;
+	box-shadow: 2px 2px 2px #000;
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+
+#createForm input:not(#createsub), #adminEdit input:not(.submit), #editabout input:not(.submit), #editrest input:not(.submit), #editnews input:not(.submit), #editevents input:not(.submit),
+#editsched input:not(.submit), #editgall input:not(.submit), .adminInput    {
+	text-align: center;
+	box-shadow: 2px 2px 2px #000;
+border: solid 1px black;
+padding: 5px;
+border-radius: 5px;
+}
+
+.white {color: white;}
+.ul {text-decoration: underline;}
+
+#admin_index {
+
+	background-image: url(../images/BG_ci_aerial.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+
+#adminIndex, #createSection, #adminEditUser, #editabout, #editrest, #editnews, #editevents, #editsched, #editgall {
+	background: rgba(255, 255, 255, 0.7);
+}
+
+#adminIndex h1 {
+  font-size: 2.5em;
+
+}
+
+#adminOptions, #schedOptions {
+margin-left: -40px;
+}
+
+#adminOptions li a, #schedOptions li a {
+ color: #ffffff;
+font-size: 1.5em;
+border-radius: 5px;
+padding: 5px 10px 5px 10px;
+background-color:  #00bff3;
+box-shadow: 2px 2px 2px #000;
+}
+
+#adminOptions li, #schedOptions li  {
+	list-style: none;
+	margin-top: 30px;
+
+
+}
+
+
+.linkhover:hover {
+  text-decoration: underline;
+}
+
+#phpGreeting {
+ margin-top: 10px;
+}#greeting, #php {
+ color: #4d90fe;
+ font-weight: 600;
+ font-size: 1.8em;
+}
+
+.whitebox {
+	border: solid 1px #4d90fe;
+	border-radius: 10px;
+}
+
+.admin {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+
+
+.admin h1 {
+	margin-bottom: 25px;
+	color: #00171f;
+}
+
+
+#loginSection input.box {
+
+display: block;
+margin: 0 auto;
+margin-bottom: 20px;
+text-align: center;
+border: solid 1px #00171f;
+border-radius: 5px;
+padding: 10px;
+}
+
+
+section.admin form input.submit {
+
+    text-align: center;
+    padding: 8px 20px 8px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1em;
+    display: block;
+    margin: 0 auto;
+    background-color: #00bff3;
+    color: white;
+    margin-top: 20px;
+}
+
+section.admin form input.submit:hover, section.admin form input.submit:active {
+	transform: scale(0.9,0.9);
+	transition: ease 0.5s;
+}
+
+/*------admin styles--------*/
+
+
+
+
+
+
+
+
 .yellow { color:  #00bff3; }
 
 
 #mapWrapper {
-	
+
 }
 
  #map {
@@ -12,21 +167,21 @@
 		border-bottom: solid 1px #4d90fe;
 		width: 100%;
       }
-      /* Optional: Makes the sample page fill the window. 
+      /* Optional: Makes the sample page fill the window.
       html, body {
         height: 100%;
         margin: 0;
         padding: 0;
       } */
-	  
+
       #map-panel {
-      
+
         z-index: 10;
         text-align: center;
-        font-family: Arial, Helvetica, sans-serif;   
+        font-family: Arial, Helvetica, sans-serif;
 		background-color: #4d90fe;
       }
-	  
+
       #right-panel {
         font-family: Arial, Helvetica, sans-serif;
         line-height: 30px;
@@ -55,9 +210,9 @@
         font-size: 12px;
 		width: 100%;
       }
-     
-    
-     
+
+
+
 	 #mode-selector {
         color: #fff;
        border: solid 2px #4d90fe;
@@ -83,7 +238,7 @@
 		margin-right: 8px;
 		 box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 10px;
       }
-	  
+
 	  #origin-input {
 		 margin-left: 30%;
 	  }
@@ -93,19 +248,19 @@
         border-color: #4d90fe;
 		border-radius: 10px;
       }
-	  
+
 	  .controls {
 		  display: inline;
 	  }
-	  
+
 	  table.adp-directions {
 		  width: 100%;
-		 
+
 	  }
 
 table.adp-placemark {
-	
-	 
+
+
 }
 
 
@@ -114,7 +269,7 @@ nav.navbar.navbar-default.navbar-fixed-top.navbar-custom {
 	margin-bottom: 0;
 	border: none;
 	padding-top: 10px;
-	
+
 }
 
 
@@ -270,6 +425,20 @@ hr.content-hr {
 
 
 @media only screen and (min-width: 768px) {
+
+
+	#createForm input:not(#createsub), #createForm select, #adminEdit input:not(.submit), #editrest input:not(.submit), #editnews input:not(.submit), #editevents input:not(.submit), #editsched input:not(.submit),
+	#editgall input:not(.submit)     {
+		width: 300px;
+	}
+
+	p.inline
+	{
+
+	display: inline;
+	padding: 10px;
+	}
+
   .logo-con {
     display: none;
   }
@@ -563,6 +732,35 @@ hr.content-hr {
 @media (min-width: 992px) {
 	#myCarousel {padding-right:33.3333%;}
 	#myCarousel .carousel-controls {display:none;}
+
+	#createForm input:not(#createsub), #createForm select, #adminEdit input:not(.submit), #editrest input:not(.submit), #editnews input:not(.submit), #editevents input:not(.submit), #editsched input:not(.submit),
+	#editgall input:not(.submit)       {
+		width: 400px;
+	}
+
+
+	#adminOptions, #schedOptions {
+		width: 90%;
+		display: block;
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+
+	#adminOptions li, #schedOptions li {
+    display: inline;
+  }
+
+	#adminOptions li a, #schedOptions li a {
+		margin-right: 20px;
+
+	}
+
+#adminIndex h1 {
+  text-align: center;
+  font-size: 3em;
+	margin-bottom: 30px;
+}
+
 }
 
 @media (max-width: 991px) {

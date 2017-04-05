@@ -1,3 +1,21 @@
+
+<?php
+
+	ini_set('display_errors',1);
+    error_reporting(E_ALL);
+
+	require_once('admin/phpscripts/init.php');
+
+		$tbl = "tbl_tours";
+		$getTours = getAll($tbl);
+
+    $tbl2 = "tbl_tourinfo";
+		$getTours2 = getAll($tbl2);
+
+
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,7 +67,25 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
+
+        <?php
+            if(!is_string($getTours)){
+                while($row = mysqli_fetch_array($getTours)){
+                  echo "<tr>";
+                  echo "<td>{$row['tour_type']}</td>";
+                  echo "<td>{$row['tour_year']}</td>";
+                  echo "<td>{$row['tour_month']}</td>";
+                  echo "<td>{$row['tour_days']}</td>";
+                    echo "<td>{$row['tour_time']}</td>";
+                  echo "</tr>";
+                }
+              }else{
+                echo "<p>{$getTours}</p>";
+              }
+        ?>
+
+
+      <!--  <tr>
           <td>Regular Afternoon Tour</td>
           <td>2017</td>
           <td>May</td>
@@ -107,24 +143,9 @@
           <th>Days</th>
           <th>Time Open</th>
           <th style="width: 36px;"></th>
-        </tr>
+        </tr> -->
+</tbody>
 
-      <tbody>
-        <tr>
-          <td>Tour Base Open</td>
-          <td>2017</td>
-          <td>May/June</td>
-          <td>Weekends</td>
-          <td>12:00pm - 5:30pm</td>
-        </tr>
-        <tr>
-          <td>Tour Base Open</td>
-          <td>2017</td>
-          <td>July-Semptember 4</td>
-          <td>7 days a week</td>
-          <td>12:00pm - 5:30pm</td>
-          </tr>
-      </tbody>
      </table>
 
       <table class="table table-responsive table-striped">
@@ -140,7 +161,15 @@
       </thead>
       <tbody>
         <tr>
-          <td>$30.00 per person(includes HST) for adults and children.</td>
+          <?php
+                if(!is_string($getTours2)){
+                    while($row = mysqli_fetch_array($getTours2)){
+                      echo "<td>{$row['tour_rate']}</td>";
+                    }
+                  }else{
+                    echo "<p>{$getTours2}</p>";
+                  }
+            ?>
         </tr>
         <tr>
           <td>Special group rates are available.</td>
@@ -160,6 +189,7 @@
       <img src="images/tour_base.jpg" alt="Tour Base">
       <div class="caption">
         <h3>Tour Information</h3>
+
         <p>The tour is much like a medium hike and requires a degree of agility and fitness. You can enjoy the tour without climbing the 106 steps in the Lighthouse tower. However, when you do reach the light room, you will always remember the view.
           <br>
           <br>

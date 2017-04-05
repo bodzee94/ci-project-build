@@ -61,7 +61,7 @@
             <a href="donations.php">Donations</a>
           </li>
           <li>
-            <a href="#"><img src="images/login.svg" alt="Admin Login Button" id="loginIcon"></a>
+            <a href="admin_login.php"><img src="images/login.svg" alt="Admin Login Button" id="loginIcon"></a>
           </li>
         </ul>
       </div>
@@ -73,8 +73,8 @@
 
 
 
-<script src="js/main.js"></script>
+<!--<script src="js/main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="js/bootstrap/bootstrap.min.js"></script>-->
 </body>
 </html>

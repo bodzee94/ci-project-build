@@ -1,3 +1,14 @@
+<?php
+
+	ini_set('display_errors',1);
+    error_reporting(E_ALL);
+
+	require_once('admin/phpscripts/init.php');
+
+		$tbl = "tbl_events";
+		$getEvents = getAll($tbl);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,6 +41,9 @@ You can also connect with our Facebook page for updates about current events and
   <section class="row" id="eventsCal">
     <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
 
+
+
+
             <!-- Fluid width widget -->
     	    <div class="panel" id="panelWrapper">
                 <div class="panel-heading">
@@ -39,6 +53,30 @@ You can also connect with our Facebook page for updates about current events and
                 </div>
                 <div class="panel-body">
                     <ul class="media-list">
+                      <?php
+                          if(!is_string($getEvents)){
+                              while($row = mysqli_fetch_array($getEvents)){
+
+                            echo  "<li class=\"media\">";
+                                  echo  "<div class=\"media-left\">";
+                                      echo  "<div class=\"panel panel-danger text-center date\">";
+                                          echo  "<div class=\"panel-heading month\">";
+                                              echo  "<span class=\"panel-title strong\">{$row['event_month']}</span>";
+                                            echo "</div>";
+                                            echo "<div class=\"panel-body day text-danger\">{$row['event_day']}</div>";
+                                      echo  "</div>";
+                                    echo "</div>";
+                                    echo "<div class=\"media-body\">";
+                                        echo "<h4 class=\"media-heading\">{$row['event_title']}</h4>";
+                                          echo "<p>{$row['event_details']}</p>";
+                                    echo "</div>";
+                                echo "</li>";
+                            }
+                            }else{
+                              echo "<p>{$getEvents}</p>";
+                            }
+                      ?>
+
                         <li class="media">
                             <div class="media-left">
                                 <div class="panel panel-danger text-center date">
@@ -61,6 +99,9 @@ You can also connect with our Facebook page for updates about current events and
                                 </p>
                             </div>
                         </li>
+
+
+
                         <li class="media">
                             <div class="media-left">
                                 <div class="panel panel-danger text-center date">
@@ -124,7 +165,7 @@ You can also connect with our Facebook page for updates about current events and
                                     River Docks Lift Out
                                 </h4>
                                 <p>
-                                  Saturday morning on October 8, at 9am the metal walkways will be lifted by Sam Welsh onto the tarmac. The floating docks will follow and then the river ramp and dock last of all. We will need about 10-12 volunteers. 4 working on the Peerless ramp and 8 on the walkways. We should be done in about 1 and half hours. Contact Don Nicholson to help out. donaldnicholson48@gmail.com
+                                  Saturday morning on October 8, at 9am the metal walkways will be lifted by Sam Welsh onto the tarmac. The floating docks will follow and then the river ramp and dock last of all. We will need about 10-12 volunteers. 4 working on the Peerless ramp and 8 on the walkways. We should be done in about 1 and half hours. Please contact <a href="mailto:donaldnicholson48@gmail.com" class="ul">Don Nicholson</a> to help out.
                                 </p>
                             </div>
                         </li>
@@ -166,8 +207,10 @@ You can also connect with our Facebook page for updates about current events and
 
 
 
-<script src="js/main.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+
 </body>
 </html>

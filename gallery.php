@@ -1,3 +1,15 @@
+<?php
+
+ ini_set('display_errors',1);
+    error_reporting(E_ALL);
+
+ require_once('admin/phpscripts/init.php');
+
+   $tbl = "tbl_gallery"; 
+   $getVids = getAll($tbl);
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +26,6 @@
   <?php
     include 'nav.php';
    ?>
-
   <section class="row top-container">
     <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3 container">
     <div class="container center logo-con"><img src="images/MHS_logo.png" id="MHSlogoMobile" alt="Marine Heritage Foundation Logo"></div>
@@ -91,8 +102,8 @@
         <strong class="prim-text text-center photographer">Photographer Name</strong>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-custom-alt gallery-btn-prev" data-dismiss="modal">Previous</button>
-        <button type="button" class="btn btn-custom-alt gallery-btn-next">Next</button>
+        <button type="button" class="btn btn-custom-alt gallery-btn-prev" data-dismiss="modal" id="prev">Previous</button>
+        <button type="button" class="btn btn-custom-alt gallery-btn-next" id="next">Next</button>
       </div>
     </div>
   </div>
@@ -189,8 +200,8 @@
     include 'footer.php';
    ?>
 
-<script src="js/main.js"></script>
+<!--<script src="js/main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="js/bootstrap/bootstrap.min.js"></script> -->
 </body>
 </html>

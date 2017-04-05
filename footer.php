@@ -12,10 +12,6 @@
 
 <body>
 
-  <!--Start of Sub-footer-->
-
-  <!--Start of sub-footer-->
-
   <section class="row sub-footer">
    <h3 class="hide">Additional Information:</h3>
     <div class="col-xs-6 col-md-3 sub-footer-con thumbnail">
@@ -153,8 +149,9 @@
     </div><!--end of copyright footer-->
   </footer>
 
-<script src="js/main.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/main.js"></script>
 <script src="js/bootstrap/bootstrap.min.js"></script>
 </body>
 </html>
