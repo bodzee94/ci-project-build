@@ -11,11 +11,11 @@
 </head>
 
 <body>
-<<<<<<< HEAD
+
   <!--Start of Sub-footer-->
-=======
+
   <!--Start of sub-footer-->
->>>>>>> dan-working
+
   <section class="row sub-footer">
    <h3 class="hide">Additional Information:</h3>
     <div class="col-xs-6 col-md-3 sub-footer-con thumbnail">
