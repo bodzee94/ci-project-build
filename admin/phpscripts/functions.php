@@ -50,7 +50,7 @@ ini_set('display_errors', '1');
 			$targetpath = "../images/{$gallery_full}";
 			$targetpath2 = "../images/{$gallery_thumb}";
 
-			if(move_uploaded_file($_FILES['gallery_full']['tmp_name'],$targetpath || $_FILES['gallery_thumb']['tmp_name'],$targetpath2 )){ //tmp_name assigns a temporary name and directory for the file
+			if(move_uploaded_file($_FILES['gallery_full']['tmp_name'],$targetpath )){ //tmp_name assigns a temporary name and directory for the file
 
 				$orig = "../images/".$gallery_full;
 				$thumb = "../images/".$gallery_thumb;

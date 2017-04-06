@@ -19,7 +19,7 @@
 
 	$uploadPhoto = addPhoto($gallery_title,$gallery_thumb,$gallery_full,$gallery_photographer);
 	$message = $uploadPhoto;
-	}  
+	}
 ?>
 
 <!doctype html>
@@ -56,7 +56,7 @@
 <h1>Add Photos to Gallery:</h1><br>
 
 <?php if(!empty($message)){echo $message;} ?>
-<form action="admin_addvideo.php" method="post" enctype="multipart/form-data" id="gallForm">
+<form action="admin_addphotos.php" method="post" enctype="multipart/form-data" id="gallForm">
 <label>Add New Photo:</label><br>
 <input type="file" name="gallery_full" value="" size="32" class="fileSelector"><br>
 <label>Photo Thumbnail:</label><br>
