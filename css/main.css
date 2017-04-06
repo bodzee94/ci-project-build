@@ -976,6 +976,10 @@ nav.navbar.navbar-default.navbar-fixed-top.navbar-custom {
   text-align: center;
 }
 
+.thumb {
+	padding-bottom: 25px;
+}
+
 /* Contact Section */
 #mapSec {
   padding: 40px 0px 40px 0px;
