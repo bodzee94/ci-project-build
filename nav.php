@@ -1,16 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
-<link href="css/main.css" rel="stylesheet">
-<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-</head>
-
-<body>
   <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
   <h2 class="hide">Main Navigation</h2>
     <div class="container-fluid">
@@ -67,14 +54,3 @@
       </div>
     </div><!-- closing nav containers -->
   </nav>
-
-
-
-
-
-
-<!--<script src="js/main.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/bootstrap/bootstrap.min.js"></script>-->
-</body>
-</html>
