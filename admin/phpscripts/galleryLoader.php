@@ -1,7 +1,7 @@
 <?php
-	include ('connect.php');
+	include '../admin/phpscripts/connect.php';
 
-	$mysqli->set_charset("utf8");
+	$link->set_charset("utf8");
 
 	$gallImg= $_GET['gallery_id'];
 	$gallThumb = $_GET['gallery_thumb'];
@@ -11,7 +11,7 @@
 
 	$query = "SELECT * FROM tbl_gallery WHERE gallery_id ='$gallImg'";
 
-	$result = mysqli_query($mysqli, $query);
+	$result = mysqli_query($link, $query);
 	$row = mysqli_fetch_assoc($result);
 
 	echo json_encode($row);
