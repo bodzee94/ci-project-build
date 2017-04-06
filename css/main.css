@@ -1,25 +1,21 @@
 /* Main CSS Stylesheet */
-
-
-
-
 /*------New Styles-----*/
 
 .car-intext {
 	border: solid 2px white;
 	padding-bottom: 20px;
-	background: rgba(0, 191, 243, 0.9);
+	background: rgba(0, 191, 243, 0.8);
 	border-radius: 10px;
 	display: block;
 	margin: 0 auto;
 	width: 80%;
-	margin-left: 100px;
+	margin-left: 120px;
 	text-align: center;
 }
 
 .cartextsmall {
 	border: solid 1px white;
-	background: rgba(0, 191, 243, 0.9);
+	background: rgba(0, 191, 243, 0.8);
 	border-radius: 10px;
 	display: block;
 	margin: 0 auto;
@@ -46,21 +42,12 @@
 	font-weight: 600;
 }
 
-.car-btn:hover {
+.car-btn:hover, .car-btn:active, .car-btn:focus {
 	background-color: #006688;
 	color: white;
 }
 
 /*---------------------*/
-
-
-
-
-
-
-
-
-
 
 /*------admin styles--------*/
 
@@ -627,7 +614,7 @@ hr.content-hr {
 }
 
 .carousel-indicators .active {
-  background-color: #00bff3;
+
 }
 
 .carousel-inner img {
@@ -647,14 +634,13 @@ hr.content-hr {
 }
 
 .carousel-control.left span {
-	padding: 15px;
+	padding: 20px;
 }
 
 .carousel-control.right span {
-	padding: 15px;
+	padding: 25px;
 }
 
-.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right,
 .carousel-control .icon-prev, .carousel-control .icon-next {
 	position: absolute;
 	top: 45%;
@@ -662,16 +648,10 @@ hr.content-hr {
 	display: inline-block;
 }
 
-.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
-	left: 0;
-}
 
-.carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
-	right: 0;
-}
 
 .carousel-control.left span, .carousel-control.right span {
-	background-color: #000;
+
 }
 
 .carousel-control.left span:hover, .carousel-control.right span:hover {
@@ -683,7 +663,7 @@ hr.content-hr {
   top: 20%;
   left: 1.8%;
   right: auto;
-  width: 96.66666666666666%;
+  width: 96%;
   color: #f6feff;
 }
 

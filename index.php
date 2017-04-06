@@ -45,7 +45,7 @@ Among other projects, the Society manages the Chantry Island Light Station under
 			    <img src="images/island_aerial.jpg" alt="First slide"><!-- Static Header -->
               <div class="carousel-text text-center hidden-md hidden-lg cartextsmall">
                 <h3>
-                <strong>Chantry Island - Southampton, ON</strong>
+                <strong>Visit Chantry Island</strong>
                 </h3>
                   <p class="hidden-xs">As you take the 15 minute boat ride to the island you will enjoy the outstanding views of the sandy beach shoreline and the deep blue waters of Lake Huron.</p>
                 <br>
@@ -69,10 +69,10 @@ Among other projects, the Society manages the Chantry Island Light Station under
 			    </div>
 
           <div class="item">
-			    	<img src="images/island_aerial.jpg" alt="Second slide">
+			    	<img src="images/island_water.jpg" alt="Second slide">
             <div class="carousel-text text-center hidden-md hidden-lg cartextsmall">
               <h3>
-              <strong>Touring The Island</strong>
+              <strong>Take An Island Tour</strong>
               </h3>
                 <p class="hidden-xs">During your two hour guided visit on Chantry Island, you have the opportunity to climb to the top of the Imperial Lighthouse for extraordinary views of the island.</p>
               <br>
@@ -97,6 +97,15 @@ Among other projects, the Society manages the Chantry Island Light Station under
 
 			    <div class="item">
 			    	<img src="images/island_aerial_2.jpg" alt="Third slide">
+            <div class="carousel-text text-center hidden-md hidden-lg cartextsmall">
+              <h3>
+              <strong>Lighthouse & Cottage</strong>
+              </h3>
+                <p class="hidden-xs">Stroll back in time while visiting the Light Keeper's Cottage as it existed in the late 1800’s, decorated with period furnishings from private donors and the Bruce County Museum and Cultural Centre. You will also see the surrounding gardens and many species of birds.</p>
+              <br>
+                <a class="btn car-btn" href="restoration.php">Learn More</a><a class="btn car-btn" href="donations.php">Make A Donation</a>
+            </div>
+
               <div class="carousel-text hidden-xs">
                 <div class="col-md-12 text-center car-intext">
                   <h3>
@@ -104,7 +113,7 @@ Among other projects, the Society manages the Chantry Island Light Station under
                   </h3>
 
                     <h4>
-                      <span id="car3text">Stroll back in time while visiting the Light Keeper's Cottage as it existed in the late 1800’s, decorated with period furnishings from private donors and the Bruce County Museum and Cultural Centre. You will also see the surrounding gardens and many species of birds</span>
+                      <span id="car3text">Stroll back in time while visiting the Light Keeper's Cottage as it existed in the late 1800’s, decorated with period furnishings from private donors and the Bruce County Museum and Cultural Centre. You will also see the surrounding gardens and many species of birds.</span>
                     </h4>
 
                     <div>
@@ -116,10 +125,10 @@ Among other projects, the Society manages the Chantry Island Light Station under
 
 			<!-- Left/Right controls -->
 			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-		    	<span class="glyphicon glyphicon-chevron-left"></span>
+		    	<span class="icon-prev"></span>
 			</a>
 			<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-		    	<span class="glyphicon glyphicon-chevron-right"></span>
+		    	<span class="icon-next"></span>
 			</a>
 		</div><!-- end of overall carousel div -->
 	 </div>
