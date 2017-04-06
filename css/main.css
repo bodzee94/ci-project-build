@@ -1,6 +1,10 @@
 /* Main CSS Stylesheet */
 /*------New Styles-----*/
 
+.linkhov:hover {
+	color: #006688;
+}
+
 .car-intext {
 	border: solid 2px white;
 	padding-bottom: 20px;
@@ -23,6 +27,10 @@
 	padding-bottom: 20px;
 }
 
+.cartextsmall h4 {
+	font-size: 1.5em;
+}
+
 #car3text {
 	font-size: 0.9em;
 	line-height: 1em;
@@ -42,9 +50,19 @@
 	font-weight: 600;
 }
 
-.car-btn:hover {
+.car-btn:hover, .car-btn2:hover {
 	background-color: #006688;
 	color: white;
+}
+
+
+.car-btn2 {
+	margin-right: 8px;
+	font-size: 1em;
+	text-shadow: none;
+	background-color: white;
+	color: #006688;
+	font-weight: 600;
 }
 
 /*---------------------*/
@@ -369,6 +387,7 @@ hr.content-hr {
 #MHSlogoMobile {
   max-width: 150px;
   margin-right: 2%;
+	margin-top: 10px;
 }
 
 .navbar {
@@ -566,6 +585,7 @@ hr.content-hr {
 .top-container {
   padding: 75px 0px 40px 0px;
   background: #00bff3;
+	text-align: center;
 }
 
 .well {
@@ -651,6 +671,10 @@ hr.content-hr {
 	right: 0;
 }
 
+.carousel-control.left span, .carousel-control.right span {
+
+}
+
 .carousel-control.left span:hover, .carousel-control.right span:hover {
 	opacity: .7;
 }
@@ -728,6 +752,13 @@ hr.content-hr {
   margin: 0 auto;
 	height: auto;
 	width: 100%;
+}
+
+.img-responsive2 {
+  margin: 0 auto;
+	height: auto;
+	max-width: 100%;
+	display: block;
 }
 
 /* News section */

@@ -1,19 +1,11 @@
 <?php
-	$user = "root";
-	$pass = "";
-	$url = "localhost";
-	$db = "db_chantry";
+	$user = "msmed608_admin";
+	$pass = "@MacBookPro2";
+	$url = "msmedia.ca";
+	$db = "msmed608_db_chantry";
 
-	/*stores all link info in an array*/
-	/*$config = array(
-		"mysql_server" => "localhost",
-		"mysql_user" => "root",
-		"mysql_password" => "root",
-	"mysql_db" => "db_chantry";
-	);*/
 
-	//$link = mysqli_connect($url, $user, $pass, $db, "8889"); //Mac
-	$link = mysqli_connect($url, $user, $pass, $db); //PC
+	$link = mysqli_connect($url, $user, $pass, $db);
 
 	if(mysqli_connect_errno()) {
 		printf("Connect failed: %s\n", mysqli_connect_error());

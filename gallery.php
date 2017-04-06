@@ -33,12 +33,13 @@
   <section class="row top-container">
     <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3 container">
     <div class="container center logo-con"><img src="images/MHS_logo.png" id="MHSlogoMobile" alt="Marine Heritage Foundation Logo"></div>
-      <h2 class="content-header sec-text">Photo Gallery</h2>
+      <h2 class="content-header sec-text">Photo Gallery & Volunteer List</h2>
         <hr class="small sec-text" id="society-hr">
-          <p class="sec-text">Welcome to our photo gallery. This section includes pictures of Chantry Island and the area of Lake Huron surrounding the Island. It also includes pictures of the lighthouse and keeper's cottage inside and out, as well as photos of some of the birds and flowers native to the island.
+          <p class="sec-text">Welcome to our photo gallery. This section includes pictures of Chantry Island and the area of Lake Huron surrounding the Island. It also includes pictures of the lighthouse and keeper's cottage inside and out, as well as photos of some of the birds and flowers native to the island.<br>
+            You can also find our list of current volunteers at the bottom of the page or by clicking <a href="#volunteers" class="ul linkhov white">here.</a>
           </p>
-            <p class="small sec-text">
-              If you have photos of Chantry Island that you would like to share with us, connect with our Facebook page.
+            <p class="sec-text">
+              If you have photos of Chantry Island that you would like to share with us, connect with our <a href="https://www.facebook.com/MarineHeritageSociety/" target="_blank" class="ul linkhov white">Facebook page.</a>
             </p>
     </div>
   </section>
@@ -46,7 +47,7 @@
   <section id="gallery">
 	<div class="row">
  <div class="col-lg-12">
-                <h1 class="text-center title5">Gallery</h1>
+                <h1 class="text-center title5">Chantry Island Gallery</h1>
                 <hr class="hr">
             	</div>
 
