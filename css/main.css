@@ -4,7 +4,7 @@
 
 
 #mapWrapper {
-	
+
 }
 
  #map {
@@ -12,21 +12,21 @@
 		border-bottom: solid 1px #4d90fe;
 		width: 100%;
       }
-      /* Optional: Makes the sample page fill the window. 
+      /* Optional: Makes the sample page fill the window.
       html, body {
         height: 100%;
         margin: 0;
         padding: 0;
       } */
-	  
+
       #map-panel {
-      
+
         z-index: 10;
         text-align: center;
-        font-family: Arial, Helvetica, sans-serif;   
+        font-family: Arial, Helvetica, sans-serif;
 		background-color: #4d90fe;
       }
-	  
+
       #right-panel {
         font-family: Arial, Helvetica, sans-serif;
         line-height: 30px;
@@ -55,9 +55,9 @@
         font-size: 12px;
 		width: 100%;
       }
-     
-    
-     
+
+
+
 	 #mode-selector {
         color: #fff;
        border: solid 2px #4d90fe;
@@ -83,7 +83,7 @@
 		margin-right: 8px;
 		 box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 10px;
       }
-	  
+
 	  #origin-input {
 		 margin-left: 30%;
 	  }
@@ -93,19 +93,19 @@
         border-color: #4d90fe;
 		border-radius: 10px;
       }
-	  
+
 	  .controls {
 		  display: inline;
 	  }
-	  
+
 	  table.adp-directions {
 		  width: 100%;
-		 
+
 	  }
 
 table.adp-placemark {
-	
-	 
+
+
 }
 
 
@@ -114,15 +114,8 @@ nav.navbar.navbar-default.navbar-fixed-top.navbar-custom {
 	margin-bottom: 0;
 	border: none;
 	padding-top: 10px;
-	
+
 }
-
-
-
-
-
-
-
 
 /* General Styles */
 body {
@@ -365,6 +358,7 @@ hr.content-hr {
 }
 
 /* Content Section Styles */
+
 .top-container {
   padding: 75px 0px 40px 0px;
   background: #00bff3;
@@ -385,9 +379,20 @@ hr.content-hr {
   font-size: 1.4em;
 }
 
-/*Marine Heritage Society Section*/
+/*Marine Heritage Society Section Header*/
 .content-header {
   text-align: center;
+}
+
+/* Home Page */
+
+/*Promo Video Section*/
+.embed-responsive-item {
+    max-width: 1280px;
+}
+
+.video-container {
+	margin-top: 5%;
 }
 
 /*Touring Chantry Island Carousel Section*/
@@ -831,4 +836,13 @@ footer ul li a:hover {
 
 .footer-bottom p.pull-left {
 	padding-top: 6px;
+}
+
+/*Fixes*/
+.nopadding {
+    padding: 0;
+}
+
+body {
+	overflow-x: hidden;
 }
