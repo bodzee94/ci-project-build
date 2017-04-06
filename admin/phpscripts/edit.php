@@ -23,8 +23,7 @@ ini_set('display_errors',1);
 		}
 	}
 	$qstring .= "WHERE {$col}={$id}";
-	//echo $qstring;
-	$updateQuery = mysqli_query($link, $qstring);
+	$updateQuery = mysqli_query($link,$qstring);
 
 	if($updateQuery) {
 		header("Location: ../../admin_index.php");

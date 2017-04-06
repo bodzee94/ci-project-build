@@ -119,6 +119,5 @@ echo "<section class=\"row about-container\">";
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/aboutreq.js"></script>
 </body>
 </html>

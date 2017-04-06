@@ -49,8 +49,5 @@ about5.innerHTML = infodata.about_birdText;
 }
 }
 
-//[].forEach.call(langbuts, function(langbuts) {
-	//langbuts.addEventListener("click", requestinfo, false);
-	//});
 
 	})();

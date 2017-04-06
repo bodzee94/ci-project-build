@@ -1,5 +1,8 @@
 <?php
 
+ini_set('display_errors',1);
+	error_reporting(E_ALL);
+
 function single_edit($tbl, $col, $id){
 
 $result = getSingle($tbl, $col, $id);

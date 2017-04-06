@@ -49,7 +49,7 @@
 <p>(Drag the boxes to expand)</p>
 
 
-<?php echo single_edit($tbl, $col, $id); ?>
+<?php echo single_edit($tbl,$col,$id); ?>
 
 <br><a href="../admin_index.php" class="ul linkhover text-center">Back to Admin Panel</a>
 
@@ -66,6 +66,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="../js/bootstrap/bootstrap.min.js"></script>
 <script src="../js/main.js"></script>
+<script src="../js/aboutreq.js"></script>
 
 </body>
 </html>
