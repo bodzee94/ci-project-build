@@ -1,6 +1,6 @@
 <?php
 	require_once("admin/phpscripts/init.php");
-	confirm_logged_in();
+	//confirm_logged_in();
 ?>
 
 <!doctype html>
