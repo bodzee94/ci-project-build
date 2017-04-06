@@ -30,6 +30,23 @@ Among other projects, the Society manages the Chantry Island Light Station under
     </div>
   </section>
 
+  <!--Promo video section-->
+  <section class="container video-container">
+    <div class="row">
+    	<div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0 nopadding">
+    	   <!-- For 16:9 aspect ratio -->
+        <div class="embed-responsive embed-responsive-16by9">
+          <video width="854" height="480" poster="video/promo_thumbnail.png" controls>
+            <source src="video/ci_promo.mp4" type="video/mp4">
+            <source src="video/ci_promo.avi" type="video/avi">
+            <source src="video/ci_promo.ogv" type="video/ogv">
+            Please update to a browser version that supports video.
+          </video>
+        </div>
+      </div>
+    </div>
+  </section>
+
     <!--Intro "touring" Section with image carousel-->
   <section class="row" id="tourSec">
 	  <div class="container">
@@ -138,8 +155,9 @@ Among other projects, the Society manages the Chantry Island Light Station under
   include 'footer.php';
  ?>
 
-<script src="js/main.js"></script>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
