@@ -48,8 +48,6 @@
 }
 
 /*---------------------*/
-
-
 /*------admin styles--------*/
 
 .fileSelector {
@@ -127,10 +125,7 @@ box-shadow: 2px 2px 2px #000;
 #adminOptions li, #schedOptions li  {
 	list-style: none;
 	margin-top: 30px;
-
-
 }
-
 
 .linkhover:hover {
   text-decoration: underline;
@@ -158,52 +153,38 @@ box-shadow: 2px 2px 2px #000;
 	padding-bottom: 20px;
 }
 
-
 .admin h1 {
 	margin-bottom: 25px;
 	color: #00171f;
 }
 
-
 #loginSection input.box {
-
-display: block;
-margin: 0 auto;
-margin-bottom: 20px;
-text-align: center;
-border: solid 1px #00171f;
-border-radius: 5px;
-padding: 10px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	text-align: center;
+	border: solid 1px #00171f;
+	border-radius: 5px;
+	padding: 10px;
 }
 
-
 section.admin form input.submit {
-
-    text-align: center;
-    padding: 8px 20px 8px 20px;
-    border-radius: 10px;
-    border: none;
-    font-size: 1em;
-    display: block;
-    margin: 0 auto;
-    background-color: #00bff3;
-    color: white;
-    margin-top: 20px;
+	text-align: center;
+  padding: 8px 20px 8px 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1em;
+  display: block;
+  margin: 0 auto;
+  background-color: #00bff3;
+  color: white;
+  margin-top: 20px;
 }
 
 section.admin form input.submit:hover, section.admin form input.submit:active {
 	transform: scale(0.9,0.9);
 	transition: ease 0.5s;
 }
-
-/*------admin styles--------*/
-
-
-
-
-
-
-
 
 .yellow { color:  #00bff3; }
 
@@ -309,11 +290,7 @@ section.admin form input.submit:hover, section.admin form input.submit:active {
 	  }
 
 table.adp-placemark {
-
-
 }
-
-
 
 nav.navbar.navbar-default.navbar-fixed-top.navbar-custom {
 	margin-bottom: 0;
@@ -321,14 +298,6 @@ nav.navbar.navbar-default.navbar-fixed-top.navbar-custom {
 	padding-top: 10px;
 
 }
-
-
-
-
-
-
-
-
 
 /* General Styles */
 body {
@@ -476,8 +445,6 @@ hr.content-hr {
 
 
 @media only screen and (min-width: 768px) {
-
-
 	#createForm input:not(#createsub), #createForm select, #adminEdit input:not(.submit), #editrest input:not(.submit), #editnews input:not(.submit), #editevents input:not(.submit), #editsched input:not(.submit),
 	#editgall input:not(.submit), 	#editvols input:not(.submit)     {
 		width: 300px;
@@ -585,7 +552,6 @@ hr.content-hr {
 }
 
 /* Content Section Styles */
-
 .top-container {
   padding: 75px 0px 40px 0px;
   background: #00bff3;
@@ -612,7 +578,6 @@ hr.content-hr {
 }
 
 /* Home Page */
-
 /*Promo Video Section*/
 .embed-responsive-item {
     max-width: 1280px;
@@ -801,7 +766,6 @@ hr.content-hr {
 		width: 400px;
 	}
 
-
 	#adminOptions, #schedOptions {
 		width: 90%;
 		display: block;
@@ -815,7 +779,6 @@ hr.content-hr {
 
 	#adminOptions li a, #schedOptions li a {
 		margin-right: 20px;
-
 	}
 
 #adminIndex h1 {
@@ -823,7 +786,6 @@ hr.content-hr {
   font-size: 3em;
 	margin-bottom: 30px;
 }
-
 }
 
 @media (max-width: 991px) {
@@ -831,7 +793,7 @@ hr.content-hr {
 	#myCarousel .list-group {display:none;}
 }
 
-/* Events calendar seection */
+/* Events calendar section */
 #events {
   padding: 40px 0px 40px 0px;
   background: #00bff3;
@@ -909,31 +871,30 @@ hr.content-hr {
       } */
 
       #map-panel {
-
-        z-index: 10;
+				z-index: 10;
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
-		background-color: #4d90fe;
+				background-color: #4d90fe;
       }
 
       #right-panel {
         font-family: Arial, Helvetica, sans-serif;
         line-height: 30px;
-		padding-left: 20px;
-		padding-right: 20px;
-		margin-top: -320px;
-		border: solid 4px #4d90fe;
-		border-radius: 20px;
-		height: 500px;
-		margin-right: 20px;
-		margin-left: 20px;
-		overflow: auto;
-		margin-bottom: 10px;
+				padding-left: 20px;
+				padding-right: 20px;
+				margin-top: -320px;
+				border: solid 4px #4d90fe;
+				border-radius: 20px;
+				height: 500px;
+				margin-right: 20px;
+				margin-left: 20px;
+				overflow: auto;
+				margin-bottom: 10px;
       }
 
       #right-panel select, #right-panel input {
         font-size: 5px;
-		width: 100%;
+				width: 100%;
       }
 
       #right-panel select {
@@ -942,21 +903,21 @@ hr.content-hr {
 
       #right-panel i {
         font-size: 12px;
-		width: 100%;
+				width: 100%;
       }
 
 
 
 	 #mode-selector {
-        color: #fff;
-       border: solid 2px #4d90fe;
-		border-radius: 10px;
-		background-color: white;
-		padding: 10px;
-        margin-top: 5px;
-		margin-left: 12px;
-		box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 10px;
-      }
+		 color: #fff;
+		 border: solid 2px #4d90fe;
+		 border-radius: 10px;
+		 background-color: white;
+		 padding: 10px;
+		 margin-top: 5px;
+		 margin-left: 12px;
+		 box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 10px;
+  	}
 
 	       #origin-input,
       #destination-input {

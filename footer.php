@@ -33,46 +33,45 @@
     <div class="footer" id="footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+          <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
             <h3>Chantry Island</h3>
             <ul>
           	  <li><p> <a href="tel:5197975862">Call: 519-797-5862</a> <br> <a href="tel:18667975862">Toll Free: 1-866-797-5862</a>
-              <br><br> Marine Heritage Society <br> Box 421 <br> Southhampton, Ontario <br> Canada, N0H 2L0 </p></li>
+              Marine Heritage Society<br>Box 421<br>Southhampton, Ontario<br>Canada, N0H 2L0</p></li>
             </ul>
           </div>
 
-          <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+          <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
             <h3>Home &amp; About</h3>
             <ul>
-              <li><a href="#">Home</a></li>
+              <li><a href="index.php">Home</a></li>
               <li><a href="#">Admin Sign In</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Restorations</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Events</a></li>
+              <li><a href="about.php">About</a></li>
+              <li><a href="restoration.php">Restorations</a></li>
+              <li><a href="news.php">News</a></li>
+              <li><a href="events.php">Events</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+          <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
             <h3>Booking &amp; Contact</h3>
             <ul>
-             	<li><a href="#">Booking Info</a></li>
-              <li><a href="#">Schedule &amp; Rates</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Maps</a></li>
+             	<li><a href="bookings.php">Booking Info</a></li>
+              <li><a href="bookings.php">Schedule &amp; Rates</a></li>
+              <li><a href="contact.php">Maps</a></li>
             </ul>
           </div>
 
-          <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+          <div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
             <h3>Gallery &amp; Donations</h3>
             <ul>
-              <li><a href="#">Chantry Island Gallery</a></li>
-              <li><a href="#">Volunteers</a></li>
-              <li><a href="#">Donate Today</a></li>
+              <li><a href="gallery.php">Chantry Island Gallery</a></li>
+              <li><a href="gallery.php">Volunteers</a></li>
+              <li><a href="donations.php">Donate Today</a></li>
             </ul>
           </div>
 
-          <!--<div class="col-lg-2 col-md-2 col-sm-4 col-xs-6">
+          <!--<div class="col-lg-2 col-md-2 col-sm-6 col-xs-12">
             <ul class="social">
               <li> <a href="#"> <i class=" fa fa-facebook"></i></a></li>
               <li> <a href="#"> <i class="fa fa-twitter"></i></a></li>
@@ -82,7 +81,7 @@
             </ul>
           </div>-->
 
-          <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
             <h3>Contact Us</h3>
             <ul>
               <li>
