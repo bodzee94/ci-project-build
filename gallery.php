@@ -31,14 +31,14 @@
 
 
   <!--Gallery w/ modals-->
-      <section class="row" id="gallerySec">
-        <div class="container">
-          <div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Photos:</h3>
-  </div>
+  <section class="row" id="gallerySec">
+    <div class="container">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Photos:</h3>
+        </div>
 
-  <div class="panel-body" id="thumbnails">
+  <div class="panel-body thumbnails">
     <div data-toggle="modal" data-target="#modal1" class="col-md-3 col-lg-3 thumb">
     <figure>
       <img  class="img-responsive" src="images/gallery1.jpg" alt="img" title="image"/>
@@ -364,8 +364,8 @@
     include 'footer.php';
    ?>
 
-<script src="js/main.js"></script>
-<script src="js/bootstrap/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
