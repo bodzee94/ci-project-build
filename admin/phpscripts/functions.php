@@ -157,6 +157,32 @@ function addTourInfo($tour_rate,$tour_info,$tour_notes) {
 	}
 
 
+	function addVol($volunteer_name,$volunteer_title,$volunteer_date_started) {
+
+		include('connect.php');
+		$volunteer_name = mysqli_real_escape_string($link,$volunteer_name);
+		$volunteer_title = mysqli_real_escape_string($link,$volunteer_title);
+		$volunteer_date_started = mysqli_real_escape_string($link,$volunteer_date_started);
+
+
+			$qstring9 = "INSERT INTO tbl_volunteers VALUES(NULL,'{$volunteer_name}', '{$volunteer_title}', '{$volunteer_date_started}')";
+			$result9 = mysqli_query($link, $qstring9);
+
+			if($result9==1){
+
+			$qstring10 = "SELECT * FROM tbl_volunteers ORDER BY volunteer_id DESC LIMIT 1";
+			$result10 = mysqli_query($link, $qstring10);
+
+			$row5 = mysqli_fetch_array($result10);
+			$lastID5 = $row5['volunteer_id'];
+
+			}
+
+			redirect_to("../admin_index.php");
+
+		}
+
+
 	function mailUser($fname, $lname, $username, $email, $password) {
 
 	include('connect.php');

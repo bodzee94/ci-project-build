@@ -53,12 +53,13 @@
 			  <li><a class="linkhover" href="admin/admin_editevents.php">Add An Event</a></li>
 				<li><a class="linkhover" href="admin/admin_editsched.php">Update Schedule</a></li>
 				  <li><a class="linkhover" href="admin/admin_addphotos.php">Add Gallery Photos</a></li>
+					<li><a class="linkhover" href="admin/admin_addVolunteer.php">Add A Volunteer</a></li>
 		</ul>
 	</div>
    </section>
 </div>
 
-    <div class="btn btn-custom ul text-center"><a href="admin/phpscripts/caller.php?caller_id=logout">Log Out</a></div>
+    <div class="btn btn-custom ul text-center"><a href="admin_login.php">Log Out</a></div>
 <br>
 
       <?php

@@ -5,8 +5,11 @@
 
  require_once('admin/phpscripts/init.php');
 
-   $tbl = "tbl_gallery"; 
+   $tbl = "tbl_gallery";
    $getVids = getAll($tbl);
+
+   		$tbl2 = "tbl_volunteers";
+   		$getVols = getAll($tbl2);
 
 
 ?>
@@ -126,6 +129,7 @@
         </tr>
       </thead>
       <tbody>
+
         <tr>
           <td>Don Nicholson</td>
           <td>Chairman</td>
@@ -191,6 +195,21 @@
           <td>Observor</td>
           <td>2016-09-30</td>
         </tr>
+        <?php
+            if(!is_string($getVols)){
+                while($row = mysqli_fetch_array($getVols)){
+
+                echo "<tr>";
+                  echo  "<td>{$row['volunteer_name']}</td>";
+                    echo "<td>{$row['volunteer_title']}</td>";
+                    echo "<td>{$row['volunteer_date_started']}</td>";
+                  echo "</tr>";
+
+              }
+              }else{
+                echo "<p>{$getVols}</p>";
+              }
+        ?>
       </tbody>
       </table>
     </div>
@@ -200,8 +219,11 @@
     include 'footer.php';
    ?>
 
-<!--<script src="js/main.js"></script>
+
+
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="js/bootstrap/bootstrap.min.js"></script> -->
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

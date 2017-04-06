@@ -9,7 +9,7 @@
 	background-color: white;
 }
 
-#adminCreate, #admin_edituser, #admin_editabout, #admin_editrest, #admin_editnews, #admin_editevents, #admin_editsched, #admin_editgall {
+#adminCreate, #admin_edituser, #admin_editabout, #admin_editrest, #admin_editnews, #admin_editevents, #admin_editsched, #admin_editgall, #admin_editvols {
 	background-image: url(../images/waterBG.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -33,7 +33,7 @@
 
 
 #createForm input:not(#createsub), #adminEdit input:not(.submit), #editabout input:not(.submit), #editrest input:not(.submit), #editnews input:not(.submit), #editevents input:not(.submit),
-#editsched input:not(.submit), #editgall input:not(.submit), .adminInput    {
+#editsched input:not(.submit), #editgall input:not(.submit), .adminInput, #editvols input:not(.submit)    {
 	text-align: center;
 	box-shadow: 2px 2px 2px #000;
 border: solid 1px black;
@@ -52,7 +52,7 @@ border-radius: 5px;
 	width: 100%;
 }
 
-#adminIndex, #createSection, #adminEditUser, #editabout, #editrest, #editnews, #editevents, #editsched, #editgall {
+#adminIndex, #createSection, #adminEditUser, #editabout, #editrest, #editnews, #editevents, #editsched, #editgall, #editvols {
 	background: rgba(255, 255, 255, 0.7);
 }
 
@@ -428,7 +428,7 @@ hr.content-hr {
 
 
 	#createForm input:not(#createsub), #createForm select, #adminEdit input:not(.submit), #editrest input:not(.submit), #editnews input:not(.submit), #editevents input:not(.submit), #editsched input:not(.submit),
-	#editgall input:not(.submit)     {
+	#editgall input:not(.submit), 	#editvols input:not(.submit)     {
 		width: 300px;
 	}
 
@@ -734,7 +734,7 @@ hr.content-hr {
 	#myCarousel .carousel-controls {display:none;}
 
 	#createForm input:not(#createsub), #createForm select, #adminEdit input:not(.submit), #editrest input:not(.submit), #editnews input:not(.submit), #editevents input:not(.submit), #editsched input:not(.submit),
-	#editgall input:not(.submit)       {
+	#editgall input:not(.submit), #editvols input:not(.submit)       {
 		width: 400px;
 	}
 
