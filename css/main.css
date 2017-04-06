@@ -628,11 +628,11 @@ hr.content-hr {
 }
 
 .carousel-control.left span {
-	padding: 15px;
+	padding: 20px;
 }
 
 .carousel-control.right span {
-	padding: 15px;
+	padding: 25px;
 }
 
 .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right,
@@ -649,10 +649,6 @@ hr.content-hr {
 
 .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next {
 	right: 0;
-}
-
-.carousel-control.left span, .carousel-control.right span {
-	background-color: #000;
 }
 
 .carousel-control.left span:hover, .carousel-control.right span:hover {
