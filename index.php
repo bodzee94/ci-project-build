@@ -133,10 +133,11 @@ Among other projects, the Society manages the Chantry Island Light Station under
 
 			<!-- Left/Right controls -->
 			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-		    	<span class="glyphicon glyphicon-chevron-left"></span>
+		    <img src="icons/gallery_icon_left.svg" class="left-arrow" alt="Gallery Left Arrow">
 			</a>
+
 			<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-		    	<span class="glyphicon glyphicon-chevron-right"></span>
+		    <img src="icons/gallery_icon_right.svg" class="right-arrow" alt="Gallery Right Arrow">
 			</a>
 		</div><!-- end of overall carousel div -->
 	 </div>
@@ -146,8 +147,8 @@ Among other projects, the Society manages the Chantry Island Light Station under
   include 'footer.php';
  ?>
 
-<script src="js/main.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
