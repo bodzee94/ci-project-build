@@ -1,121 +1,6 @@
 /* Main CSS Stylesheet */
 
-.yellow { color:  #00bff3; }
 
-
-#mapWrapper {
-
-}
-
- #map {
-        height: 50%;
-		border-bottom: solid 1px #4d90fe;
-		width: 100%;
-      }
-      /* Optional: Makes the sample page fill the window.
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      } */
-
-      #map-panel {
-
-        z-index: 10;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-		background-color: #4d90fe;
-      }
-
-      #right-panel {
-        font-family: Arial, Helvetica, sans-serif;
-        line-height: 30px;
-		padding-left: 20px;
-		padding-right: 20px;
-		margin-top: -320px;
-		border: solid 4px #4d90fe;
-		border-radius: 20px;
-		height: 500px;
-		margin-right: 20px;
-		margin-left: 20px;
-		overflow: auto;
-		margin-bottom: 10px;
-      }
-
-      #right-panel select, #right-panel input {
-        font-size: 5px;
-		width: 100%;
-      }
-
-      #right-panel select {
-        width: 100%;
-      }
-
-      #right-panel i {
-        font-size: 12px;
-		width: 100%;
-      }
-
-
-
-	 #mode-selector {
-        color: #fff;
-       border: solid 2px #4d90fe;
-		border-radius: 10px;
-		background-color: white;
-		padding: 10px;
-        margin-top: 5px;
-		margin-left: 12px;
-		box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 10px;
-      }
-
-	       #origin-input,
-      #destination-input {
-        background-color: #fff;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
-        font-weight: 300;
-        width: 220px;
-		padding: 10px;
-		border: solid 2px #4d90fe;
-		border-radius: 10px;
-		margin-top: 10px;
-		margin-right: 8px;
-		 box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 10px;
-      }
-
-	  #origin-input {
-		 margin-left: 30%;
-	  }
-
-      #origin-input:focus,
-      #destination-input:focus {
-        border-color: #4d90fe;
-		border-radius: 10px;
-      }
-
-	  .controls {
-		  display: inline;
-	  }
-
-	  table.adp-directions {
-		  width: 100%;
-
-	  }
-
-table.adp-placemark {
-
-
-}
-
-
-
-nav.navbar.navbar-default.navbar-fixed-top.navbar-custom {
-	margin-bottom: 0;
-	border: none;
-	padding-top: 10px;
-
-}
 
 /* General Styles */
 body {
@@ -630,6 +515,116 @@ hr.content-hr {
 #bookingsInfo {
   padding-top: 4%;
   background-color: #efd093;
+}
+
+/*Location/Google Maps Section*/
+.yellow {
+	color:  #00bff3; }
+
+#mapWrapper {
+
+}
+
+ #map {
+    height: 50%;
+		border-bottom: solid 1px #4d90fe;
+		width: 100%;
+      }
+      /* Optional: Makes the sample page fill the window.
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      } */
+
+      #map-panel {
+
+        z-index: 10;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+		background-color: #4d90fe;
+      }
+
+      #right-panel {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 30px;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-top: -320px;
+		border: solid 4px #4d90fe;
+		border-radius: 20px;
+		height: 500px;
+		margin-right: 20px;
+		margin-left: 20px;
+		overflow: auto;
+		margin-bottom: 10px;
+      }
+
+      #right-panel select, #right-panel input {
+        font-size: 5px;
+		width: 100%;
+      }
+
+      #right-panel select {
+        width: 100%;
+      }
+
+      #right-panel i {
+        font-size: 12px;
+		width: 100%;
+      }
+
+
+
+	 #mode-selector {
+        color: #fff;
+       border: solid 2px #4d90fe;
+		border-radius: 10px;
+		background-color: white;
+		padding: 10px;
+        margin-top: 5px;
+		margin-left: 12px;
+		box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 10px;
+      }
+
+	       #origin-input,
+      #destination-input {
+        background-color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        width: 220px;
+		padding: 10px;
+		border: solid 2px #4d90fe;
+		border-radius: 10px;
+		margin-top: 10px;
+		margin-right: 8px;
+		 box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 10px;
+      }
+
+	  #origin-input {
+		 margin-left: 30%;
+	  }
+
+      #origin-input:focus,
+      #destination-input:focus {
+        border-color: #4d90fe;
+		border-radius: 10px;
+      }
+
+	  .controls {
+		  display: inline;
+	  }
+
+	  table.adp-directions {
+		  width: 100%;
+
+	  }
+
+nav.navbar.navbar-default.navbar-fixed-top.navbar-custom {
+	margin-bottom: 0;
+	border: none;
+	padding-top: 10px;
 }
 
 /*Gallery Section*/
