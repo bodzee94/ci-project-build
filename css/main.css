@@ -8,7 +8,7 @@
 }
 
  #map {
-        height: 50%;
+    height: 50%;
 		border-bottom: solid 1px #4d90fe;
 		width: 100%;
       }
@@ -107,8 +107,6 @@ table.adp-placemark {
 
 
 }
-
-
 
 nav.navbar.navbar-default.navbar-fixed-top.navbar-custom {
 	margin-bottom: 0;
