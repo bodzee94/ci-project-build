@@ -45,7 +45,7 @@
             <h3>Home &amp; About</h3>
             <ul>
               <li><a href="index.php">Home</a></li>
-              <li><a href="#">Admin Sign In</a></li>
+              <li><a href="admin_login.php">Admin Sign In</a></li>
               <li><a href="about.php">About</a></li>
               <li><a href="restoration.php">Restorations</a></li>
               <li><a href="news.php">News</a></li>
