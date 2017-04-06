@@ -89,24 +89,12 @@
                 <div class="input-append contact-box text-center">
                   <form>
     			    			<div class="form-group">
-                      <label>To:</label>
-                        <input type="text" name="first_name" id="first_name" class="form-control input-sm text-center" placeholder="chantryisland@bmts.com" required>
-    			    			<div class="row">
-    			    				<div class="col-xs-6 col-sm-6 col-md-6">
-    			    					<div class="form-group">
-                            <label>To:</label>
-                            <input type="text" name="first_name" id="first_name" class="form-control input-sm text-center" placeholder="chantryisland@bmts.com" required>
-    			    					</div>
-    			    				</div>
-    			    			</div>
-
-    			    			<div class="form-group">
-    			    				<input type="email" name="email" id="email" class="form-control input-sm text-center" placeholder="Enter Your Email" required>
-    			    			</div>
+                      <label>Enter Your Email:</label>
+                        <input type="email" name="email" id="email" class="form-control input-sm text-center" placeholder="chantryisland@bmts.com" required>
+                    </div>
 
                     <div class="form-group">
-    			             <input type="text" name="phone" id="number" class="form-control input-sm text-center" placeholder="Enter Your Phone Number">
-    			   <input type="text" name="phone" id="number" class="form-control input-sm text-center" placeholder="Enter Your Phone Number" required>
+    			            <input type="text" name="phone" id="number" class="form-control input-sm text-center" placeholder="Enter Your Phone Number" required>
     			    			</div>
 
                     <div class="form-group">
