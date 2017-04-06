@@ -15,63 +15,6 @@
     include 'nav.php';
    ?>
    
-<!--  <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-  <h2 class="hide">Main Navigation</h2>
-    <div class="container-fluid">
-
-      <!-- mobile navigation 
-      <div class="navbar-header page-scroll">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation menu</span>
-              Menu<i class="fa fa-bars"></i>
-        </button>
-          <a class="navbar-brand" href="index.php"><img src="images/MHS_logo.png" alt="Marine Heritage Society Logo" id="MHSlogo"></a><!--swap out for img tag for logo
-      </div>
-
-      <!-- desktop/tablet navigation 
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li>
-            <a href="index.php">Home</a>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">About</a>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                <li>
-                  <a href="about.php">About</a>
-                </li>
-                <li>
-                  <a href="news.php">News</a>
-                </li>
-                <li>
-                  <a href="events.php">Events</a>
-                </li>
-                <li>
-                  <a href="restoration.php">Restoration</a>
-                </li>
-              </ul>
-          </li>
-          <li>
-            <a href="bookings.php">Book A Tour</a>
-          </li>
-            <li>
-            <a href="contact.php">Location</a>
-          </li>
-          <li>
-            <a href="gallery.php">Gallery</a>
-          </li>
-
-          <li>
-            <a href="donations.php">Donations</a>
-          </li>
-          <li>
-            <a href="#"><img src="images/login.svg" alt="Admin Login Button" id="loginIcon"></a>
-          </li>
-        </ul>
-      </div>
-    </div><!-- closing nav containers 
-  </nav>  -->
-
 
 <section class="row text-center" id="contactSec">
     <div class="col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3 container">
@@ -86,15 +29,15 @@
             </div>
   </section>
 
- 
+
 
 
 
 
 
  <div id="map-panel">
-   
-  
+
+
    <input id="origin-input" class="controls" type="text"
         placeholder="Enter Your Postal Code">
 
@@ -102,45 +45,45 @@
         placeholder="Chantry Island, Southampton">
 
     <div id="mode-selector" class="controls">
-    
+
     <input type="radio" name="type" id="changemode-driving" checked="checked">
       <label for="changemode-driving"><img src="icons/drive.svg" alt="Walking" width="50"></label>
-      
+
       <input type="radio" name="type" id="changemode-walking">
       <label for="changemode-walking"><img src="icons/walk.svg" alt="Walking" width="50"></label>
-      
-      
+
+
       <input type="radio" name="type" id="changemode-bicycling">
       <label for="changemode-bicycling"><img src="icons/bike.svg" alt="Walking" width="50"></label>
-      
+
 
       <input type="radio" name="type" id="changemode-transit">
       <label for="changemode-transit"><img src="icons/bus.svg" alt="Walking" width="50"></label>
-      
-      
+
+
 
     </div>
     </div>
-   
-   
-   
-    
-   
-    
+
+
+
+
+
+
      <div style="height:100%; width:100%;" id="mapWrapper">
     <div id="map"></div>
     </div>
-    
+
   <div id="right-panel">
   	<h1 style="text-align: center;">Directions:</h1>
     <p style="text-align: center;">Please enter your address above to get directions to our Tour Base.</p>
   </div>
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
    <script>
       function initMap() {
         var directionsDisplay = new google.maps.DirectionsRenderer;
@@ -149,7 +92,7 @@
           zoom: 13,
           center: {lat: 44.499891, lng: -81.373547}
         });
-		
+
 		var lighthouse = 'icons/lighthouse.svg';
   var lighthouseMarker = new google.maps.Marker({
     position: {lat: 44.490068, lng:  -81.403973},
@@ -158,19 +101,19 @@
 	title: "Chantry Island, Southampton Ontario",
 	label: "Chantry Island, Southampton Ontario",
 	 })
-	 
-	 
+
+
 	 var tourbase = 'icons/anchor.svg';
   var baseMarker = new google.maps.Marker({
-    position: {lat: 44.492580, lng:  -81.371946}, 
+    position: {lat: 44.492580, lng:  -81.371946},
     map: map,
     icon: tourbase,
 	title: "Chantry Island Tour Base",
 	label: "Tour Base"
 	 })
-	 
-	 
-		
+
+
+
         directionsDisplay.setMap(map);
         directionsDisplay.setPanel(document.getElementById('right-panel'));
 
@@ -183,20 +126,20 @@
         var onChangeHandler = function() {
           calculateAndDisplayRoute(directionsService, directionsDisplay);
         };
-       
+
         document.getElementById('destination-input').addEventListener('change', onChangeHandler);
-		
-		
+
+
 		 new AutocompleteDirectionsHandler(map);
-		 
-		 
+
+
       }
 
 
-		
-      
-	  
-	  
+
+
+
+
 	   function AutocompleteDirectionsHandler(map) {
         this.map = map;
         this.originPlaceId = null;
@@ -218,7 +161,7 @@
 		this.setupClickListener('changemode-walking', 'WALKING');
 		 this.setupClickListener('changemode-bicycling', 'BICYCLING');
         this.setupClickListener('changemode-transit', 'TRANSIT');
-       
+
 
         this.setupPlaceChangedListener(originAutocomplete, 'ORIG');
         this.setupPlaceChangedListener(destinationAutocomplete, 'DEST');
@@ -254,9 +197,9 @@
             me.destinationPlaceId = place.place_id;
           }
           me.route();
-        }); 
+        });
 
-      }; 
+      };
 
       AutocompleteDirectionsHandler.prototype.route = function() {
         if (!this.originPlaceId || !this.destinationPlaceId) {
@@ -276,17 +219,17 @@
           }
         });
       };
-		
-		
-      
+
+
+
 	  function calculateAndDisplayRoute(directionsService, directionsDisplay) {
         var start = document.getElementById('origin-input').value;
         var end = document.getElementById('destination-input').value;
-		
+
 	/*	if (marker) {
 			marker.setMap(null);
 		} */
-		
+
         directionsService.route({
           origin: start,
           destination: {lat: 44.499891, lng: -81.373547},
@@ -298,17 +241,17 @@
             window.alert('Directions request failed due to ' + status);
           }
         });
-	
+
       }
-	  
-    </script> 
-    
-    
+
+    </script>
+
+
    <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgLtAB9zgzoikGtNvZj-qYa6V9z3IN1ao&callback=initMap&libraries=places">
     </script>
-  
- 
+
+
       <?php
         include 'footer.php';
        ?>

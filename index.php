@@ -42,34 +42,55 @@ Among other projects, the Society manages the Chantry Island Light Station under
 
 			<div class="carousel-inner"><!-- Wrapper div for slides -->
 			  <div class="item active">
-			    <img src="images/southampton_aerial.jpg" alt="First slide"><!-- Static Header -->
-            <div class="carousel-text hidden-xs">
-              <div class="col-md-12 text-center">
+			    <img src="images/island_aerial.jpg" alt="First slide"><!-- Static Header -->
+              <div class="carousel-text text-center hidden-md hidden-lg cartextsmall">
                 <h3>
-                Touring <strong>Chantry Island</strong>
+                <strong>Chantry Island - Southampton, ON</strong>
                 </h3>
-                  <br>
+                  <p class="hidden-xs">As you take the 15 minute boat ride to the island you will enjoy the outstanding views of the sandy beach shoreline and the deep blue waters of Lake Huron.</p>
+                <br>
+                  <a class="btn car-btn" href="bookings.php">Book A Tour</a><a class="btn car-btn" href="about.php">Learn More</a>
+              </div>
+
+            <div class="carousel-text hidden-xs hidden-sm">
+              <div class="col-md-12 text-center car-intext">
+                <h3>
+                <strong>Chantry Island - Southampton, ON</strong>
+                </h3>
+
                     <h4>
                     <span>As you take the 15 minute boat ride to the island you will enjoy the outstanding views of the sandy beach shoreline and the deep blue waters of Lake Huron.</span>
                     </h4>
-                      <br>
+
                         <div>
-                          <a class="btn btn-custom btn-sm btn-min-block" href="#">Bookings</a><a class="btn btn-custom btn-sm btn-min-block" href="#">Gallery</a></div>
+                          <a class="btn car-btn" href="gallery.php">Photo Gallery</a><a class="btn car-btn" href="contact.php">Get Directions</a></div>
                         </div>
                     </div>
 			    </div>
 
           <div class="item">
 			    	<img src="images/island_aerial.jpg" alt="Second slide">
-			    	  <div class="carousel-text hidden-xs">
-                <div class="col-md-12 text-center">
-                  <br>
+            <div class="carousel-text text-center hidden-md hidden-lg cartextsmall">
+              <h3>
+              <strong>Touring The Island</strong>
+              </h3>
+                <p class="hidden-xs">During your two hour guided visit on Chantry Island, you have the opportunity to climb to the top of the Imperial Lighthouse for extraordinary views of the island.</p>
+              <br>
+                <a class="btn car-btn" href="bookings.php">Book A Tour</a><a class="btn car-btn" href="about.php">Learn More</a>
+            </div>
+
+			    	  <div class="carousel-text hidden-xs hidden-sm">
+                <div class="col-md-12 text-center car-intext">
+                  <h3>
+                  <strong>Touring The Island</strong>
+                  </h3>
+
                     <h4>
                       <span>During your two hour guided visit on Chantry Island, you have the opportunity to climb to the top of the Imperial Lighthouse for extraordinary views of the island.</span>
                     </h4>
-                      <br>
+
                         <div>
-                          <a class="btn btn-custom btn-sm btn-min-block" href="#">News</a><a class="btn btn-custom btn-sm btn-min-block" href="#">Restoration</a></div>
+                        <a class="btn car-btn" href="gallery.php">Photo Gallery</a><a class="btn car-btn" href="contact.php">Get Directions</a></div>
                         </div>
                   </div>
 			    </div>
@@ -77,14 +98,17 @@ Among other projects, the Society manages the Chantry Island Light Station under
 			    <div class="item">
 			    	<img src="images/island_aerial_2.jpg" alt="Third slide">
               <div class="carousel-text hidden-xs">
-                <div class="col-md-12 text-center">
-                  <br>
+                <div class="col-md-12 text-center car-intext">
+                  <h3>
+                  <strong>The Lighthouse & Cottage</strong>
+                  </h3>
+
                     <h4>
-                      <span>Stroll back in time while visiting the Light Keeper's Cottage as it existed in the late 1800’s, decorated with period furnishings from private donors and the Bruce County Museum and Cultural Centre. You will also see the surrounding gardens and many species of birds</span>
+                      <span id="car3text">Stroll back in time while visiting the Light Keeper's Cottage as it existed in the late 1800’s, decorated with period furnishings from private donors and the Bruce County Museum and Cultural Centre. You will also see the surrounding gardens and many species of birds</span>
                     </h4>
-                    <br>
+
                     <div>
-                      <a class="btn btn-custom btn-sm btn-min-block" href="#">Events</a><a class="btn btn-custom btn-sm btn-min-block" href="#">Donations</a></div>
+                      <a class="btn car-btn" href="restoration.php">Learn More</a><a class="btn car-btn" href="donations.php">Make A Donation</a></div>
                     </div>
                 </div>
 			        </div>
